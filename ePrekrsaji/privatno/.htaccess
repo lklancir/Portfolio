@@ -1,0 +1,4 @@
+AuthUserFile /var/www/WebDiP/2013_projekti/WebDiP2013_031/privatno/.htpasswd
+AuthType Basic
+AuthName "htacces"
+Require valid-user

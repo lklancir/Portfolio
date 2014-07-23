@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/foundation.css"/>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+   
+    </head>
+    <body>
+        <header id="zaglavlje">
+             
+           
+
+        </header>
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="index.php">ePrekršaji</a></h1>
+                </li>
+     
+               
+            </ul>
+
+            <section class="top-bar-section">
+   
+            <ul class="right">
+                
+                <li><a href="views/prijava.php">Prijava</a></li>
+                <li><a href="views/registracija.php">Registracija</a></li>
+                
+            </ul>
+
+   
+            <ul class="left">
+                
+                <li><a href="views/popis.php">Popis</a></li>
+                <li><a href="dokumentacija.html">Dokumentacija</a></li>
+            </ul>
+            </section>
+        </nav>
+        <section id="sadrzaj" class="center2">
+            <div id="accordion">
+                <h3>Opis projektnog zadatka</h3>
+                <div>
+                  <h2>ePrekršaji</h2>
+                  
+                  <h4>Kratak opis projekta: Sustav služi za evidentiranje prekršaja</h4>
+                  <b>Uloge</b>   
+                  <ul>
+                      <li>Neregistrirani korisnik</li>
+                      <li>Registrirani korisnik</li>
+                      <li>Policajac (Moderator)</li>
+                      <li>Administrator</li>
+                  </ul>
+                  <b>Detaljne upute:</b></br></br>
+                  <i>Administrator</i>
+                  <ul>
+                    <li>Definira policijske uprave (svaka uprava spada u određenu županiju) i dodjeljuje svakoj
+                            policijskoj upravi policajce.</li>
+                    <li>Administrator vidi statistiku korištenja sustava, pogrešnih/ispravnih prijava, po korisnicima
+                            vremenskom periodu (od - do).</li>
+                    <li>Definira kategorije prekršaja (krađa, pogrešno parkiranje, ubojstvo, …) te za svaku kategoriju
+                        definira da li odlazi u zastaru i ako da za koliko vremena.</li>
+                    <li>Administrator vidi ako ima korisnika kojima je danas otišao prekršaj u 
+                        zastaru i šalje svima mail notifikaciju.</li>
+                  </ul>
+                  <i>Moderator</i>
+                  <ul>
+                    <li>Unosi prekršaj u dosje osobe (OIB je jedinstveni identifikator pod kojim se vode osobe). Svaka
+                        osoba za koju se unosi prekršaj mora biti registrirana. Za svaku osobu postoji dosje sa popisom
+                        svih prekršaja.</li>
+                    <li>Jedan zapis se sastoji od informacija u kojem mjestu, županiji (automatski se vadi na temelju
+                        županije u kojoj radi policajac) u koje vrijeme i datum je prekršaj počinjen, te opis sa prilozima
+                        (galerija slika (min 3), izjave očevidaca (pdf dokument)) i kategorija. Prilikom unosa svakog
+                        prekršaja bilježi se koji policajac je to unio.</li>
+                    <li>Može prihvatiti ili odbiti žalbu. Policajac vidi sve žalbe pristigle za prekršaje koje je on
+                        evidentirao i njihov status (zaprimljena, prihvaćena, odbijena).</li>
+                    <li>Policajac vidi statistiku žalbi i prekršaja po korisnicima, te prekršaje po županijama i
+                        kategorijama. Svi pregledi se baziraju na vremenskom periodu (od - do).</li>
+                  </ul>
+                  <i>Registrirani korisnik</i>
+                  <ul>
+                    <li>Kod registracije mora unijeti svoj OIB. Može pregledavati svoj dosje.</li>
+                    <li>Može podnijeti žalbu za određenu evidenciju prekršaja, unosi tekst žalbe i može priložiti dokaz
+                        koji dokazuje da nije počinio neki prekršaja (npr. slika sa datumom).</li>
+                    <li>Može vidjeti statistiku svih prihvaćenih, odbijenih žalbi. Može filtrirati po svim prekršajima koje
+                        su otišle u zastaru ili datumski sa ispisom kada budu otišle u zastaru.</li>
+                  </ul>
+                  <i>Neregistrirani korisnik</i>
+                  <ul>
+                    <li>može vidjeti popis županija, policijskih uprava i djelatnika.</li>
+                  </ul>
+                </div>
+                <h3>Opis projektnog rješenja</h3>
+                <div>
+                  <p>
+                      Projekt je realiziran kroz četiri glavna sučelja a to su <b>Neregistrirani i registrirani korisnik te moderator
+                          i administrator.</b></br>
+                      Svako od tih sučelja je zaseban korisnik sa određenim ovlastima sa kojima može odrađivati razne zadatake/probleme
+                      na sustavu.</br>
+                      
+                      Tijekom izvršavanja projektnog zadataka koristio sam puno materijala iz zadaća, napravljenih od strane a
+                      asistenata te materijalima prezentiranih od strane profesora na predavanju.
+                      
+                      Također je dosta pomogao i "google" pristup di sam našao različite tutoriale za generiranje XML-a , JSON-a,
+                      "ticking clock" preko jquery te upiti za SQL.
+                      
+                      Aplikacija se nalazi u nekoliko većih cijelina, podjeljenih u mape od kojih su najbitnije "skripte" i "views"
+                      za većinu funkcionalnosti aplikacije.
+                      
+                  </p>
+                </div>
+                <h3>Bitne odrednice</h3>
+                <div>
+                  <p>
+                  Cijeli sustav se zasniva na bazi podataka koja je zapravo temelj svih funkcionalnosti. Centar baze podataka je tablica
+                  prekršaji koja zapravo spaja sve ostale tablice i grane u jednu cijelinu.
+                  </p>
+                  <ul>
+                    <li>aktivacija</li>
+                    <li>dnevnik_sustava</li>
+                    <li>dosje_osobe</li>
+                    <li>kateogrije_prek</li>
+                    <li>korisnici</li>
+                    <li>mjesto</li>
+                    <li>policajac</li>
+                    <li>pol_uprave</li>
+                    <li>prekrsaji</li>
+                    <li>slike</li>
+                    <li>tip_korisnika</li>
+                    <li>zalbe</li>
+                    <li>zupanije</li>
+                  </ul>
+                  <h4 class="center">Era model</h4>
+                  <img src="img/eramodell.png" alt="Era model" height="900" width="900">
+                </div>
+                <h3>Popis i opis skripata</h3>
+                <div>
+                   Ovdje je naveden popis mapa koje su sastavni dio projekta od kojih svaka ima kategorizirane skripte za različite funkcionalnosti:</br></br>                  
+                   <a href="#" data-reveal-id="json">JSON</a></br>
+                    <div id="json" class="reveal-modal" data-reveal>
+                        <ul>
+                            <li>korisnici.json - JSON datoteka koja sadrži sve korisnike, potrebna kod AJAX provjera validacije</li>
+                            <li>pol_uprave.json - JSON datoteka koja sadrži sve policijske uprave, potrebna za neregistriranog korisnika - AJAX</li>
+                            <li>policajac.json - JSON datoteka koja sadrži sve policajce, potrebna za neregistriranog korisnika - AJAX </li>
+                            <li>zupanije.json - JSON datoteka koja sadrži sve zupanije, potrebna za neregistriranog korisnika - AJAX</li>
+                            <li>pomak.xml - XML datoteka za pomak vremena</li>
+                        </ul>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                   <a href="#" data-reveal-id="class">class</a></br>
+                    <div id="class" class="reveal-modal" data-reveal>
+                        <ul>
+                            <li>baza.class.php - php skripta sa funkcionalnostima spajanja na bazu te extended klasom za logiranje sutava u dnevnik</li>
+                        </ul>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                     <a href="#" data-reveal-id="css">CSS</a></br>
+                    <div id="css" class="reveal-modal" data-reveal>
+                        <ul>
+                            <li>foundation.css - css foundation 5.0 frontend okvira koji je korišten u izradi projekta</li>
+                            <li>main.css - css sa određenim stiliziranom postavkama rađenim ručno za određene dijelove</li>
+                        </ul>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                    <a href="#" data-reveal-id="foundation">foundation</a></br>
+                    <div id="foundation" class="reveal-modal" data-reveal>
+                        <ul>
+                            <li>foundation.min.css - standardni minimalizirani css foundation razvojnog okvira</li>
+                            <li>normalize.css - css resetovi</li>
+                            <li>humans.txt - kreatori foundationa</li>
+                            <li>index.html - primjeri foundation frameworka</li>
+                            <li>robots.txt - indeksiranje</li>
+                        </ul>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                    <a href="#" data-reveal-id="fpdf">fpdf</a></br>
+                    <div id="fpdf" class="reveal-modal" data-reveal>
+                        <ul>
+                            <li>fpdf.php - biblioteka sa funkcijama potrebnim za geneiranje pdfova</li>
+                            <li>font - datoteka sa fontovima koje podržava generator</li>
+                            <li>docs - detaljno opisan plugin</li>
+                        </ul>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                    <a href="#" data-reveal-id="img">img</a></br>
+                    <div id="img" class="reveal-modal" data-reveal>
+                        <ul>
+                            <li>eramodel.png</li>
+                            <li>mup-logo.png</li>
+                            <li>navigacijski.jpg</li>
+                        </ul>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                    <a href="#" data-reveal-id="js">js</a></br>
+                    <div id="js" class="reveal-modal" data-reveal>
+                        <ul>
+                            <li>foudnation - mapa koja sadrži sve foudnation *.js datoteke</li>
+                            <li>vendor -  mapa koja sadrži jqeury i vendorske dodatke za founadtion</li>
+                            <li>foundation.min.js - glavni foudantion javascript potreban za funkcionalnosti (drop down buttons, modals..)</li>
+                            <li>lklancir_jquery.js - jquery funkcionalnosti razrađene za projekt ( validacija , AJAX, datatables...)</li>
+                        </ul>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                    <a href="#" data-reveal-id="privatno">privatno</a></br>
+                    <div id="privatno" class="reveal-modal" data-reveal>
+                        <ul>
+                            <li>.htaccess - putanja to htpasswd</li>
+                            <li>.htpasswd - password za auth</li>
+                            <li>korisnici.php - skripta popis korisnika</li>
+                        </ul>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                    <a href="#" data-reveal-id="recaptcha">recaptcha</a></br>
+                    <div id="recaptcha" class="reveal-modal" data-reveal>
+                        <ul>
+                            <li>recaptcha.lib.php - google recaptcha (validacija) </li>
+                        </ul>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                    <a href="#" data-reveal-id="skripte">skripte</a></br>
+                    <div id="skripte" class="reveal-modal" data-reveal>
+                        <ul>
+                            <li>aktivacija.php - skripta koja odrađuje aktivaciju korisničkih računa </li>
+                            <li>banUnban.php - skripta koja odrađuje aktivaciju/deaktivaciju računa - administrator</li>
+                            <li>generiranjeKorisnika.php - skripta koja se aktivra kod AJAX zahtjeva te preko json datoteke korisni.json provjerava zauzetost emaila / korisničkog imena</li>
+                            <li>generiranjePopisa.php - skripta koja generira ostale JSON datoteke</li>
+                            <li>pdfGen.php - skripta zadužena za generiranje PDF-a dnevnika zapisa</li>
+                            <li>prijavaOdjava.php - skripta zadužena za stvaranje sesija te rukovođenje prijava i odjava</li>
+                            <li>zaboravljenaLozinka.php - skripta koja provjerava proslijeđene podatke te šalje mail sa novom lozinkom i update baze</li>
+                            <li>zalbeStatus.php - skripta koja odrađuje prihvaćanje ili odbijanje žalbe - moderator</li>
+                            <li>zastara.php - skripta koja provjerava da li na današnji datum i iznad postoji koji prešaj da odlazi u zastaru - </li>
+                        </ul>
+                      <a class="close-reveal-modal">&#215;</a>
+                      </div>
+                       <a href="#" data-reveal-id="views">views</a></br>
+                       <div id="views" class="reveal-modal" data-reveal>
+                        <ul>
+                            <li><b>administrator.php</b> -glavno sučelje administratora, menađment korisnika i pregled prekršaja u zastari</li>
+                            <li><b>administratorKategorijePrekršaja</b> -sučelje za CRUD - kategorije prekršaja</li>
+                            <li><b>administratorPolUprave</b> -sučelje za CRUD - policijske uprave</li>
+                            <li><b>administratorPolicajci</b> -sučelje za CRUD - policajaci</li>
+                            <li><b>administratorPostavke</b> -sučelje za konfiguraciju sustava, virutalno vrijeme, JSON, pregled logova</li>
+                            <li><b>administratorStatistika</b> sučelje za pregled statistika</li>
+                            <li><b>greske.php</b> -lovi id greške te ispisuje odgovorajuću poruku upozorenja</li>
+                            <li><b>moderator.php</b> -glavno sučelje moderatora - pregled žalbi za obradu</li>
+                            <li><b>moderatorStatistika.php</b> -sučelje za pregled statistike vezane uz žalbe</li>
+                            <li><b>moderatorUnesiPrekršaj</b> sučelje za unos prekršaja određenog korisnika (pristupa preko moderator.php)</li>
+                            <li><b>moderatorUnesiPrekršajForma</b> -forma za unos prekršaja (pristupa preko moderatorUnesiPrekršaj.php</li>
+                            <li><b>mojetemplate.php</b> -template korišten kod bržeg c/p novi stranica (neki standarni okvir)</li>
+                            <li><b>odjava.php</b> -skripta za odjavu korisnika (brisanje sesijskih podataka i pisanje u log)</li>
+                            <li><b>popis.php</b> -skripta do prventveno namjenjena neregistriranom korisniku (prema zadataku) te pregled zupanija,pol uprava i policajaca</li>
+                            <li><b>prijava.php</b> -sučelje za prijavu korisnika, stvaranje sesijskih podataka, izgubljana lozinka</li>
+                            <li><b>prijavaOdjavaView.php</b> -skripta koja se uključi na svaku stranicu aplikacije te određuje ovisno o tekućoj sesiji pregled navigacije za prijavu odnosno odjavu</li>
+                            <li><b>registracija.php</b> -forma za registraciju novog korisnika, validacija preko serverske strane (php) i jqeury (AJAX)</li>
+                            <li><b>registrirani.php</b> sučelje registriranog korisnika, pregled svojeg dosjea, te pregled/statistika žalbi </li>
+                            <li><b>registriraniStatistika</b> -statistika pregleda žalbi (od - do)</li>
+                            <li><b>registriraniZalbe</b> -unos žalbe na određeni prekršaj (preko dosje u registrirani.php)</li>
+                            <li><b>sat.php</b> - jquery sat (ticking)</li>
+                            <li><b>uspjesi.php</b> -skripta koja vraća poruku da je akcija uspješno izvršena</li>
+                            <li><b>vrijeme.php</b> -skripta koja odrađuje pomak vremena te je korištena na ostalim stranicima zbog sata i ostalih funkcionalnosti pomaka vremena</li>
+                        </ul>
+                      <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                   <h4 class="center">Navigacijski dijagram</h4>
+                  <img src="img/navigacijski" alt="Navigacijski dijagram" height="900" width="900"> 
+                </div>
+                <h3>Popis i opis korištenih tehnologija</h3>
+                <div>
+                    <ul>
+                        <li>Netbeans IDE 7.4 ravojno okruženje</li>
+                        <li>Sublime Text Editor</li>
+                        <li>PHP</li>
+                        <li>HTML / CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <h3>Popis i opis vanjskih modula</h3>
+                <div>
+                  <h4 class="center">ZURB Foundation 5 front-end razvojno okruženje</h4>
+                  - Odlično razvojno okruženje za frontend koje sam koristion u toku izrade projekta. Nije korišten nikakv template već
+                  same klase i određeni dijelovi (izrada forme, navbar )
+                  <h4 class="center">Jquery / Jquery UI</h4>
+                  -javascript biblioteka za skriptiranje HTML-a . Koristio sam ju u kombinaciji sa foundationom, jquery UI 
+                  (accordion tabovi) i datatables.
+                  </br></br></br>
+                  POPIS:
+                  </br>
+                  http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+                  http://code.jquery.com/ui/1.10.4/jquery-ui.js"
+                  http://datatables.net/download/build/nightly/jquery.dataTables.js"
+                  </br></br>
+                  skripta za generiranje random lozinke
+        
+                </div>
+              </div>
+        </section>
+        <footer id="podnozje">
+           
+        </footer>
+     
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script src="http://datatables.net/download/build/nightly/jquery.dataTables.js"></script>
+        <script src="js/lklancir_jquery.js"></script>
+        <script src="js/lklancir.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>$(document).foundation();</script>
+        
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        
+        <script>
+        $(function() {
+            $( "#accordion" ).accordion({
+              collapsible: true
+            });
+          });
+  </script>
+    </body>
+</html>

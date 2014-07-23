@@ -1,0 +1,87 @@
+.center{
+    
+    width: 40%;
+    margin: 20px auto;
+}
+
+.center2{
+    
+    width: 60%;
+    margin: 20px auto;
+}
+
+
+
+.btnPopis{
+    width: 60%;
+    margin: 20px auto;
+}
+.Greska{
+    color: red;
+    
+}
+
+
+#korisnici_length{
+    width: 50px;
+    display: inline-block;
+    float: left;
+    
+}
+#korisnici_filter {
+  width: 30%;
+  display: inline-block;
+  float: right;
+}
+
+#tablica_length{
+    margin-right: 200px;
+    width: 50px;
+    display: inline-block;
+    float: left;
+}
+
+#tablica_filter{
+    width: 30%;
+  display: inline-block;
+  float: right;
+}
+
+
+footer{
+    background: #124961;
+    text-align: center;
+    color: white;
+    margin-top: 30%;
+    width: 100%;
+    clear:both;
+}
+ 
+
+#accordion{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+    background: #008cba;
+    color: white;
+}
+
+.ui-helper-hidden-accessible { 
+    position: absolute; left: -9999px; }
+
+
+#animacija{
+    transition: 1s;
+    padding-top:  10%;
+    padding-right: 10%;
+    padding-left: 20%;
+}
+
+#animacija:hover{
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    
+    transition: 1s;
+    
+}
+
