@@ -1,0 +1,1 @@
+ "%ProgramFiles(x86)%\Microsoft Help Viewer\v2.0\hlpctntmgr" /silent /operation install /catalogName "Appoteka Help" /locale hr-HR /sourceUri "%CD%\helpcontentsetup.msha"

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="appotekaDBModelStoreContainer" CdmEntityContainer="appotekaDBEntities">
+    <EntitySetMapping Name="dobavljaci">
+      <EntityTypeMapping TypeName="appotekaDBModel.dobavljaci">
+        <MappingFragment StoreEntitySet="dobavljaci">
+          <ScalarProperty Name="IdDobavljac" ColumnName="IdDobavljac" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="OIB" ColumnName="OIB" />
+          <ScalarProperty Name="IBAN" ColumnName="IBAN" />
+          <ScalarProperty Name="adresa" ColumnName="adresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kategorijeLijekova">
+      <EntityTypeMapping TypeName="appotekaDBModel.kategorijeLijekova">
+        <MappingFragment StoreEntitySet="kategorijeLijekova">
+          <ScalarProperty Name="IdKategorije" ColumnName="IdKategorije" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="opis" ColumnName="opis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ladice">
+      <EntityTypeMapping TypeName="appotekaDBModel.ladice">
+        <MappingFragment StoreEntitySet="ladice">
+          <ScalarProperty Name="IdLadice" ColumnName="IdLadice" />
+          <ScalarProperty Name="kapacitet" ColumnName="kapacitet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lijekovi">
+      <EntityTypeMapping TypeName="appotekaDBModel.lijekovi">
+        <MappingFragment StoreEntitySet="lijekovi">
+          <ScalarProperty Name="serijskiBroj" ColumnName="serijskiBroj" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="proizvodac" ColumnName="proizvodac" />
+          <ScalarProperty Name="rokTrajanja" ColumnName="rokTrajanja" />
+          <ScalarProperty Name="cijenaKupovna" ColumnName="cijenaKupovna" />
+          <ScalarProperty Name="cijenaProdajna" ColumnName="cijenaProdajna" />
+          <ScalarProperty Name="kolicina" ColumnName="kolicina" />
+          <ScalarProperty Name="dopunsko" ColumnName="dopunsko" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="narudzbe">
+      <EntityTypeMapping TypeName="appotekaDBModel.narudzbe">
+        <MappingFragment StoreEntitySet="narudzbe">
+          <ScalarProperty Name="IdNarudzbe" ColumnName="IdNarudzbe" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
+          <ScalarProperty Name="iznos" ColumnName="iznos" />
+          <ScalarProperty Name="IdDobavljac" ColumnName="IdDobavljac" />
+          <ScalarProperty Name="OIB" ColumnName="OIB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="racun">
+      <EntityTypeMapping TypeName="appotekaDBModel.racun">
+        <MappingFragment StoreEntitySet="racun">
+          <ScalarProperty Name="IdrRacuna" ColumnName="IdrRacuna" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
+          <ScalarProperty Name="iznos" ColumnName="iznos" />
+          <ScalarProperty Name="OIB" ColumnName="OIB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zaposlenici">
+      <EntityTypeMapping TypeName="appotekaDBModel.zaposlenici">
+        <MappingFragment StoreEntitySet="zaposlenici">
+          <ScalarProperty Name="OIB" ColumnName="OIB" />
+          <ScalarProperty Name="prezime" ColumnName="prezime" />
+          <ScalarProperty Name="ime" ColumnName="ime" />
+          <ScalarProperty Name="korIme" ColumnName="korIme" />
+          <ScalarProperty Name="lozinka" ColumnName="lozinka" />
+          <ScalarProperty Name="adresa" ColumnName="adresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="kategorije_has_ladice" TypeName="appotekaDBModel.kategorije_has_ladice" StoreEntitySet="kategorije_has_ladice">
+      <EndProperty Name="kategorijeLijekova">
+        <ScalarProperty Name="IdKategorije" ColumnName="IdKategorije" />
+      </EndProperty>
+      <EndProperty Name="ladice">
+        <ScalarProperty Name="IdLadice" ColumnName="IdLadice" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="lijekovi_has_kategorije" TypeName="appotekaDBModel.lijekovi_has_kategorije" StoreEntitySet="lijekovi_has_kategorije">
+      <EndProperty Name="lijekovi">
+        <ScalarProperty Name="serijskiBroj" ColumnName="serijskiBroj" />
+      </EndProperty>
+      <EndProperty Name="kategorijeLijekova">
+        <ScalarProperty Name="IdKategorije" ColumnName="IdKategorije" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="lijekovi_has_narudzbe" TypeName="appotekaDBModel.lijekovi_has_narudzbe" StoreEntitySet="lijekovi_has_narudzbe">
+      <EndProperty Name="narudzbe">
+        <ScalarProperty Name="IdNarudzbe" ColumnName="IdNarudzbe" />
+      </EndProperty>
+      <EndProperty Name="lijekovi">
+        <ScalarProperty Name="serijskiBroj" ColumnName="serijskiBroj" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="lijekovi_has_racun" TypeName="appotekaDBModel.lijekovi_has_racun" StoreEntitySet="lijekovi_has_racun">
+      <EndProperty Name="lijekovi">
+        <ScalarProperty Name="serijskiBroj" ColumnName="serijskiBroj" />
+      </EndProperty>
+      <EndProperty Name="racun">
+        <ScalarProperty Name="IdrRacuna" ColumnName="IdrRacuna" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

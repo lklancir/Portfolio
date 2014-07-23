@@ -1,0 +1,20 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Help</title>
+  </head>
+  <body class="vendor-book">
+    <div class="details">
+      <span class="vendor">Innovasys Local Test</span>
+      <span class="locale">hr-HR</span>
+      <span class="product">Innovasys Local Test</span>
+      <span class="name">6e059481-c05e-42a6-85b6-db39e6aff6e1</span>
+    </div>
+    <div class="package-list">
+      <div class="package">
+        <span class="name">6e059481-c05e-42a6-85b6-db39e6aff6e1</span>      
+        <span class="package-etag"></span>
+        <a class="current-link" href="6e059481-c05e-42a6-85b6-db39e6aff6e1.cab">6e059481-c05e-42a6-85b6-db39e6aff6e1.cab</a>
+      </div>
+    </div>
+  </body>
+</html>

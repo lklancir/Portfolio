@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HzzoDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="hzzoKlijent">
+          <Key>
+            <PropertyRef Name="OIB" />
+          </Key>
+          <Property Name="OIB" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="ime" Type="nvarchar" MaxLength="45" />
+          <Property Name="prezime" Type="nvarchar" MaxLength="45" />
+          <Property Name="zdrastvenaIskaznica" Type="char" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="hzzoLijekovi">
+          <Key>
+            <PropertyRef Name="serijskiBroj" />
+          </Key>
+          <Property Name="serijskiBroj" Type="int" Nullable="false" StoreGeneratedPattern="None" />
+          <Property Name="naziv" Type="nvarchar" MaxLength="45" />
+          <Property Name="proizvodac" Type="nvarchar" MaxLength="45" />
+          <Property Name="rokTrajanja" Type="date" />
+          <Property Name="cijenaKupovna" Type="float" />
+          <Property Name="cijenaProdajna" Type="float" />
+        </EntityType>
+        <EntityType Name="hzzoRecept">
+          <Key>
+            <PropertyRef Name="idRecepta" />
+          </Key>
+          <Property Name="idRecepta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="datumIzdavanja" Type="date" />
+          <Property Name="datumPocetka" Type="date" />
+          <Property Name="datumIsteka" Type="date" />
+          <Property Name="datumPodizanja" Type="date" />
+          <Property Name="OIB" Type="char" MaxLength="11" />
+          <Property Name="serijskiBroj" Type="int" />
+        </EntityType>
+        <Association Name="Relationship3">
+          <End Role="hzzoKlijent" Type="Self.hzzoKlijent" Multiplicity="0..1" />
+          <End Role="hzzoRecept" Type="Self.hzzoRecept" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="hzzoKlijent">
+              <PropertyRef Name="OIB" />
+            </Principal>
+            <Dependent Role="hzzoRecept">
+              <PropertyRef Name="OIB" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship5">
+          <End Role="hzzoLijekovi" Type="Self.hzzoLijekovi" Multiplicity="0..1" />
+          <End Role="hzzoRecept" Type="Self.hzzoRecept" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="hzzoLijekovi">
+              <PropertyRef Name="serijskiBroj" />
+            </Principal>
+            <Dependent Role="hzzoRecept">
+              <PropertyRef Name="serijskiBroj" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HzzoDBModelStoreContainer">
+          <EntitySet Name="hzzoKlijent" EntityType="Self.hzzoKlijent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="hzzoLijekovi" EntityType="Self.hzzoLijekovi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="hzzoRecept" EntityType="Self.hzzoRecept" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="Relationship3" Association="Self.Relationship3">
+            <End Role="hzzoKlijent" EntitySet="hzzoKlijent" />
+            <End Role="hzzoRecept" EntitySet="hzzoRecept" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship5" Association="Self.Relationship5">
+            <End Role="hzzoLijekovi" EntitySet="hzzoLijekovi" />
+            <End Role="hzzoRecept" EntitySet="hzzoRecept" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HzzoDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="hzzoKlijent">
+          <Key>
+            <PropertyRef Name="OIB" />
+          </Key>
+          <Property Name="OIB" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ime" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="prezime" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="hzzoRecept" Relationship="Self.Relationship3" FromRole="hzzoKlijent" ToRole="hzzoRecept" />
+          <Property Name="zdrastvenaIskaznica" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="hzzoLijekovi">
+          <Key>
+            <PropertyRef Name="serijskiBroj" />
+          </Key>
+          <Property Name="serijskiBroj" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="naziv" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="proizvodac" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="rokTrajanja" Type="DateTime" Precision="0" />
+          <Property Name="cijenaKupovna" Type="Double" />
+          <Property Name="cijenaProdajna" Type="Double" />
+          <NavigationProperty Name="hzzoRecept" Relationship="Self.Relationship2" FromRole="hzzoLijekovi" ToRole="hzzoRecept" />
+        </EntityType>
+        <EntityType Name="hzzoRecept">
+          <Key>
+            <PropertyRef Name="idRecepta" />
+          </Key>
+          <Property Name="idRecepta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="datumIzdavanja" Type="DateTime" Precision="0" />
+          <Property Name="datumPocetka" Type="DateTime" Precision="0" />
+          <Property Name="datumIsteka" Type="DateTime" Precision="0" />
+          <Property Name="datumPodizanja" Type="DateTime" Precision="0" />
+          <Property Name="serijskiBroj" Type="Int32" />
+          <Property Name="OIB" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="hzzoKlijent" Relationship="Self.Relationship3" FromRole="hzzoRecept" ToRole="hzzoKlijent" />
+          <NavigationProperty Name="hzzoLijekovi" Relationship="Self.Relationship2" FromRole="hzzoRecept" ToRole="hzzoLijekovi" />
+        </EntityType>
+        <Association Name="Relationship3">
+          <End Role="hzzoKlijent" Type="Self.hzzoKlijent" Multiplicity="0..1" />
+          <End Role="hzzoRecept" Type="Self.hzzoRecept" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="hzzoKlijent">
+              <PropertyRef Name="OIB" />
+            </Principal>
+            <Dependent Role="hzzoRecept">
+              <PropertyRef Name="OIB" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship2">
+          <End Role="hzzoLijekovi" Type="Self.hzzoLijekovi" Multiplicity="0..1" />
+          <End Role="hzzoRecept" Type="Self.hzzoRecept" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="hzzoLijekovi">
+              <PropertyRef Name="serijskiBroj" />
+            </Principal>
+            <Dependent Role="hzzoRecept">
+              <PropertyRef Name="serijskiBroj" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HzzoDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="hzzoKlijent" EntityType="Self.hzzoKlijent" />
+          <EntitySet Name="hzzoLijekovi" EntityType="Self.hzzoLijekovi" />
+          <EntitySet Name="hzzoRecept" EntityType="Self.hzzoRecept" />
+          <AssociationSet Name="Relationship3" Association="Self.Relationship3">
+            <End Role="hzzoKlijent" EntitySet="hzzoKlijent" />
+            <End Role="hzzoRecept" EntitySet="hzzoRecept" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship2" Association="Self.Relationship2">
+            <End Role="hzzoLijekovi" EntitySet="hzzoLijekovi" />
+            <End Role="hzzoRecept" EntitySet="hzzoRecept" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HzzoDBModelStoreContainer" CdmEntityContainer="HzzoDBEntities">
+          <EntitySetMapping Name="hzzoKlijent">
+            <EntityTypeMapping TypeName="HzzoDBModel.hzzoKlijent">
+              <MappingFragment StoreEntitySet="hzzoKlijent">
+                <ScalarProperty Name="zdrastvenaIskaznica" ColumnName="zdrastvenaIskaznica" />
+                <ScalarProperty Name="OIB" ColumnName="OIB" />
+                <ScalarProperty Name="ime" ColumnName="ime" />
+                <ScalarProperty Name="prezime" ColumnName="prezime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="hzzoLijekovi">
+            <EntityTypeMapping TypeName="HzzoDBModel.hzzoLijekovi">
+              <MappingFragment StoreEntitySet="hzzoLijekovi">
+                <ScalarProperty Name="serijskiBroj" ColumnName="serijskiBroj" />
+                <ScalarProperty Name="naziv" ColumnName="naziv" />
+                <ScalarProperty Name="proizvodac" ColumnName="proizvodac" />
+                <ScalarProperty Name="rokTrajanja" ColumnName="rokTrajanja" />
+                <ScalarProperty Name="cijenaKupovna" ColumnName="cijenaKupovna" />
+                <ScalarProperty Name="cijenaProdajna" ColumnName="cijenaProdajna" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="hzzoRecept">
+            <EntityTypeMapping TypeName="HzzoDBModel.hzzoRecept">
+              <MappingFragment StoreEntitySet="hzzoRecept">
+                <ScalarProperty Name="idRecepta" ColumnName="idRecepta" />
+                <ScalarProperty Name="datumIzdavanja" ColumnName="datumIzdavanja" />
+                <ScalarProperty Name="datumPocetka" ColumnName="datumPocetka" />
+                <ScalarProperty Name="datumIsteka" ColumnName="datumIsteka" />
+                <ScalarProperty Name="datumPodizanja" ColumnName="datumPodizanja" />
+                <ScalarProperty Name="serijskiBroj" ColumnName="serijskiBroj" />
+                <ScalarProperty Name="OIB" ColumnName="OIB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

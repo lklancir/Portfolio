@@ -1,0 +1,1 @@
+ "%ProgramFiles%\Microsoft Help Viewer\v1.0\helplibmanager" /silent /product "Appoteka Help" /version 100 /locale hr-HR /uninstall /vendor "Tim21" /productName "Appoteka" /mediaBookList "Help"

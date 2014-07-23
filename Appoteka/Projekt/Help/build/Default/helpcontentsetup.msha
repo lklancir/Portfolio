@@ -1,0 +1,20 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Help</title>
+  </head>
+  <body class="vendor-book">
+    <div class="details">
+      <span class="vendor">Tim21</span>
+      <span class="locale">hr-HR</span>
+      <span class="product">Appoteka</span>
+      <span class="name">Help</span>
+    </div>
+    <div class="package-list">
+      <div class="package">
+        <span class="name">Default</span>      
+        <span class="package-etag"></span>
+        <a class="current-link" href="Default.mshc">Default.mshc</a>
+      </div>
+    </div>
+  </body>
+</html>

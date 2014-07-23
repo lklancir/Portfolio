@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="appotekaDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="dobavljaci">
+    <Key>
+      <PropertyRef Name="IdDobavljac" />
+    </Key>
+    <Property Name="IdDobavljac" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OIB" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="IBAN" Type="String" MaxLength="21" FixedLength="true" Unicode="false" />
+    <Property Name="adresa" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="narudzbe" Relationship="Self.Relationship12" FromRole="dobavljaci" ToRole="narudzbe" />
+  </EntityType>
+  <EntityType Name="kategorijeLijekova">
+    <Key>
+      <PropertyRef Name="IdKategorije" />
+    </Key>
+    <Property Name="IdKategorije" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naziv" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="opis" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ladice" Relationship="Self.kategorije_has_ladice" FromRole="kategorijeLijekova" ToRole="ladice" />
+    <NavigationProperty Name="lijekovi" Relationship="Self.lijekovi_has_kategorije" FromRole="kategorijeLijekova" ToRole="lijekovi" />
+  </EntityType>
+  <EntityType Name="ladice">
+    <Key>
+      <PropertyRef Name="IdLadice" />
+    </Key>
+    <Property Name="IdLadice" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kapacitet" Type="Int32" />
+    <NavigationProperty Name="kategorijeLijekova" Relationship="Self.kategorije_has_ladice" FromRole="ladice" ToRole="kategorijeLijekova" />
+  </EntityType>
+  <EntityType Name="lijekovi">
+    <Key>
+      <PropertyRef Name="serijskiBroj" />
+    </Key>
+    <Property Name="serijskiBroj" Type="Int32" Nullable="false" />
+    <Property Name="naziv" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="proizvodac" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="rokTrajanja" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="cijenaKupovna" Type="Double" Nullable="false" />
+    <Property Name="cijenaProdajna" Type="Double" Nullable="false" />
+    <Property Name="kolicina" Type="Int32" Nullable="false" />
+    <Property Name="dopunsko" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="kategorijeLijekova" Relationship="Self.lijekovi_has_kategorije" FromRole="lijekovi" ToRole="kategorijeLijekova" />
+    <NavigationProperty Name="narudzbe" Relationship="Self.lijekovi_has_narudzbe" FromRole="lijekovi" ToRole="narudzbe" />
+    <NavigationProperty Name="racun" Relationship="Self.lijekovi_has_racun" FromRole="lijekovi" ToRole="racun" />
+  </EntityType>
+  <EntityType Name="narudzbe">
+    <Key>
+      <PropertyRef Name="IdNarudzbe" />
+    </Key>
+    <Property Name="IdNarudzbe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="datum" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="iznos" Type="Double" Nullable="false" />
+    <Property Name="IdDobavljac" Type="Int32" />
+    <Property Name="OIB" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="dobavljaci" Relationship="Self.Relationship12" FromRole="narudzbe" ToRole="dobavljaci" />
+    <NavigationProperty Name="zaposlenici" Relationship="Self.Relationship13" FromRole="narudzbe" ToRole="zaposlenici" />
+    <NavigationProperty Name="lijekovi" Relationship="Self.lijekovi_has_narudzbe" FromRole="narudzbe" ToRole="lijekovi" />
+  </EntityType>
+  <EntityType Name="racun">
+    <Key>
+      <PropertyRef Name="IdrRacuna" />
+    </Key>
+    <Property Name="IdrRacuna" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="datum" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="iznos" Type="Double" Nullable="false" />
+    <Property Name="OIB" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="zaposlenici" Relationship="Self.Relationship16" FromRole="racun" ToRole="zaposlenici" />
+    <NavigationProperty Name="lijekovi" Relationship="Self.lijekovi_has_racun" FromRole="racun" ToRole="lijekovi" />
+  </EntityType>
+  <EntityType Name="zaposlenici">
+    <Key>
+      <PropertyRef Name="OIB" />
+    </Key>
+    <Property Name="OIB" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="prezime" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ime" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="korIme" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="lozinka" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="adresa" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="narudzbe" Relationship="Self.Relationship13" FromRole="zaposlenici" ToRole="narudzbe" />
+    <NavigationProperty Name="racun" Relationship="Self.Relationship16" FromRole="zaposlenici" ToRole="racun" />
+  </EntityType>
+  <Association Name="Relationship12">
+    <End Role="dobavljaci" Type="Self.dobavljaci" Multiplicity="0..1" />
+    <End Role="narudzbe" Type="Self.narudzbe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dobavljaci">
+        <PropertyRef Name="IdDobavljac" />
+      </Principal>
+      <Dependent Role="narudzbe">
+        <PropertyRef Name="IdDobavljac" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship13">
+    <End Role="zaposlenici" Type="Self.zaposlenici" Multiplicity="0..1" />
+    <End Role="narudzbe" Type="Self.narudzbe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="zaposlenici">
+        <PropertyRef Name="OIB" />
+      </Principal>
+      <Dependent Role="narudzbe">
+        <PropertyRef Name="OIB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship16">
+    <End Role="zaposlenici" Type="Self.zaposlenici" Multiplicity="0..1" />
+    <End Role="racun" Type="Self.racun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="zaposlenici">
+        <PropertyRef Name="OIB" />
+      </Principal>
+      <Dependent Role="racun">
+        <PropertyRef Name="OIB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kategorije_has_ladice">
+    <End Role="kategorijeLijekova" Type="Self.kategorijeLijekova" Multiplicity="*" />
+    <End Role="ladice" Type="Self.ladice" Multiplicity="*" />
+  </Association>
+  <Association Name="lijekovi_has_kategorije">
+    <End Role="lijekovi" Type="Self.lijekovi" Multiplicity="*" />
+    <End Role="kategorijeLijekova" Type="Self.kategorijeLijekova" Multiplicity="*" />
+  </Association>
+  <Association Name="lijekovi_has_narudzbe">
+    <End Role="narudzbe" Type="Self.narudzbe" Multiplicity="*" />
+    <End Role="lijekovi" Type="Self.lijekovi" Multiplicity="*" />
+  </Association>
+  <Association Name="lijekovi_has_racun">
+    <End Role="lijekovi" Type="Self.lijekovi" Multiplicity="*" />
+    <End Role="racun" Type="Self.racun" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="appotekaDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="dobavljaci" EntityType="Self.dobavljaci" />
+    <EntitySet Name="kategorijeLijekova" EntityType="Self.kategorijeLijekova" />
+    <EntitySet Name="ladice" EntityType="Self.ladice" />
+    <EntitySet Name="lijekovi" EntityType="Self.lijekovi" />
+    <EntitySet Name="narudzbe" EntityType="Self.narudzbe" />
+    <EntitySet Name="racun" EntityType="Self.racun" />
+    <EntitySet Name="zaposlenici" EntityType="Self.zaposlenici" />
+    <AssociationSet Name="Relationship12" Association="Self.Relationship12">
+      <End Role="dobavljaci" EntitySet="dobavljaci" />
+      <End Role="narudzbe" EntitySet="narudzbe" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship13" Association="Self.Relationship13">
+      <End Role="zaposlenici" EntitySet="zaposlenici" />
+      <End Role="narudzbe" EntitySet="narudzbe" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship16" Association="Self.Relationship16">
+      <End Role="zaposlenici" EntitySet="zaposlenici" />
+      <End Role="racun" EntitySet="racun" />
+    </AssociationSet>
+    <AssociationSet Name="kategorije_has_ladice" Association="Self.kategorije_has_ladice">
+      <End Role="kategorijeLijekova" EntitySet="kategorijeLijekova" />
+      <End Role="ladice" EntitySet="ladice" />
+    </AssociationSet>
+    <AssociationSet Name="lijekovi_has_kategorije" Association="Self.lijekovi_has_kategorije">
+      <End Role="lijekovi" EntitySet="lijekovi" />
+      <End Role="kategorijeLijekova" EntitySet="kategorijeLijekova" />
+    </AssociationSet>
+    <AssociationSet Name="lijekovi_has_narudzbe" Association="Self.lijekovi_has_narudzbe">
+      <End Role="narudzbe" EntitySet="narudzbe" />
+      <End Role="lijekovi" EntitySet="lijekovi" />
+    </AssociationSet>
+    <AssociationSet Name="lijekovi_has_racun" Association="Self.lijekovi_has_racun">
+      <End Role="lijekovi" EntitySet="lijekovi" />
+      <End Role="racun" EntitySet="racun" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

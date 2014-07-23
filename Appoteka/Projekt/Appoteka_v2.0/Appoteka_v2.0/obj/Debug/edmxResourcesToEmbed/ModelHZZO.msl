@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HzzoDBModelStoreContainer" CdmEntityContainer="HzzoDBEntities">
+    <EntitySetMapping Name="hzzoKlijent">
+      <EntityTypeMapping TypeName="HzzoDBModel.hzzoKlijent">
+        <MappingFragment StoreEntitySet="hzzoKlijent">
+          <ScalarProperty Name="zdrastvenaIskaznica" ColumnName="zdrastvenaIskaznica" />
+          <ScalarProperty Name="OIB" ColumnName="OIB" />
+          <ScalarProperty Name="ime" ColumnName="ime" />
+          <ScalarProperty Name="prezime" ColumnName="prezime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hzzoLijekovi">
+      <EntityTypeMapping TypeName="HzzoDBModel.hzzoLijekovi">
+        <MappingFragment StoreEntitySet="hzzoLijekovi">
+          <ScalarProperty Name="serijskiBroj" ColumnName="serijskiBroj" />
+          <ScalarProperty Name="naziv" ColumnName="naziv" />
+          <ScalarProperty Name="proizvodac" ColumnName="proizvodac" />
+          <ScalarProperty Name="rokTrajanja" ColumnName="rokTrajanja" />
+          <ScalarProperty Name="cijenaKupovna" ColumnName="cijenaKupovna" />
+          <ScalarProperty Name="cijenaProdajna" ColumnName="cijenaProdajna" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hzzoRecept">
+      <EntityTypeMapping TypeName="HzzoDBModel.hzzoRecept">
+        <MappingFragment StoreEntitySet="hzzoRecept">
+          <ScalarProperty Name="idRecepta" ColumnName="idRecepta" />
+          <ScalarProperty Name="datumIzdavanja" ColumnName="datumIzdavanja" />
+          <ScalarProperty Name="datumPocetka" ColumnName="datumPocetka" />
+          <ScalarProperty Name="datumIsteka" ColumnName="datumIsteka" />
+          <ScalarProperty Name="datumPodizanja" ColumnName="datumPodizanja" />
+          <ScalarProperty Name="serijskiBroj" ColumnName="serijskiBroj" />
+          <ScalarProperty Name="OIB" ColumnName="OIB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

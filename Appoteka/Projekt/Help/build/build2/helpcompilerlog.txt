@@ -1,0 +1,130 @@
+﻿-- Compile started at Saturday, 12 July 2014 00:05:19
+Microsoft HTML Help Compiler 4.74.8702
+
+Compiling c:\Users\Josip\Documents\GitHub\RepositoryTeam21\Projekt\Help\build2.chm
+
+script\jquery-1.7.2.min.js
+script\slimbox2.js
+stylesheets\slimbox2.css
+images\slimbox-closelabel.png
+images\hs-jquery-loading.png
+images\slimbox-nextlabel.png
+images\slimbox-prevlabel.png
+script\hs-jquery-common.js
+stylesheets\hs-jquery-common.css
+stylesheets\hs-jquery-slimbox.css
+script\jquery-expand.js
+stylesheets\hs-jquery-expand.css
+images\hs-toggler-collapsed.png
+images\hs-toggler-expanded.png
+stylesheets\hs-expandcollapse.css
+script\hs-expandcollapse.js
+script\jquery.fitvids.js
+images\hs-note.gif
+stylesheets\hs-boxes.css
+images\hs-tip.gif
+images\hs-caution.gif
+script\swfobject.js
+flash\expressinstall.swf
+stylesheets\customstyles.css
+images\loginScreen.png
+images\korisnickiPodaci.png
+images\provjeraKlijenta.png
+images\provjeraKlijentaPodaci.png
+images\provjereniKlijent.png
+images\lijekoviNaReceptu.png
+images\receptiUpripremi.png
+images\popisLijekova.png
+images\lijekoviPretrazivanje.png
+images\lijekNovi.png
+images\lijekoviOdabirKategorije.png
+images\lijekoviIzmjena.png
+images\lijekBrisanje.png
+..\..\..\narudzbePopis.png
+images\popisNarudzbe.png
+images\narudzbeNova.png
+images\narudzbeDodavanjeLijekova.png
+images\narudzbeDodaniLijekovi.png
+images\popisRacuni.png
+images\racunNovi.png
+images\racunDodavanjeStavki.png
+images\racunDodaniArtikli.png
+images\racunIznosi.png
+images\racunProvjera.png
+images\popisZaposlenici.png
+images\zaposlenikNovi.png
+images\zaposlenikIzmjena.png
+images\popisDobavljaci.png
+images\dobavljacNovi.png
+images\dobavljacIzmjena.png
+images\popisKategorije.png
+images\kategorijaNova.png
+images\kategorijaDodavanjeLadica.png
+images\kategorijaIzmjena.png
+images\ladicePopis.png
+images\ladicaNova.png
+images\ladicaIzmjeni.png
+images\hs-collapsed.gif
+images\hs-expanded.gif
+images\hs-simpletableft.png
+images\hs-simpletabright.png
+stylesheets\hs-simpletab.css
+script\hs-enlargeimage.js
+images\hs-enlarge.gif
+images\hs-shrink.gif
+images\hs-heading-collapsed.gif
+images\hs-heading-expanded.gif
+stylesheets\hs-heading-expandcollapse.css
+script\hs-common.js
+script\hs-heading-expandcollapse.js
+script\hs-tabstrip.js
+stylesheets\hs-tabstrip.css
+images\hs-tab-active-leftend.png
+images\hs-tab-active-rightend.png
+images\hs-tab-leftend.png
+images\hs-tab-rightend.png
+images\1pixel.png
+images\collapse.png
+images\copycode.png
+images\dropdown.png
+images\expand.png
+images\isnew.png
+images\uiTabsArrow.png
+script\jquery-1.7.2.js
+script\jquery-ui-1.8.18.custom.js
+script\jquery-ui-1.8.18.custom.min.js
+script\modernizr.custom.js
+script\topics.2012.js
+script\topics.jqueryplugins.2012.js
+script\topics.jqueryplugins.2012.min.js
+script\yepnope.custom.js
+script\ZeroClipboard.swf
+stylesheets\jquery-ui-1.8.18.custom.css
+stylesheets\jquery.qtip.css
+stylesheets\topics.2012.css
+stylesheets\topics.2012.mshv1.css
+stylesheets\topics.2012.mshv2.css
+Dobro dosli u Appoteku.html
+Logiranje u aplikaciju.html
+Pocetni zaslon i provjera klijenta.html
+Pretrazivanje, dodavanje, izmjena i brisanje lijekova.html
+Dodavanje, izmjena i brisanje narudzbi.html
+Dodavanje, provjera i brisanje racuna.html
+Dodavanje, izmjena i brisanje zaposlenika.html
+Dodavanje, izmjena i brisanje dobavljaca.html
+Dodavanje, izmjena i brisanje kategorija lijekova.html
+Dodavanje, izmjena i brisanje ladica.html
+build2.hhc
+build2.hhk
+
+Compile time: 0 minutes, 12 seconds
+12	Topics
+38	Local links
+0	Internet links
+0	Graphics
+
+
+Created c:\Users\Josip\Documents\GitHub\RepositoryTeam21\Projekt\Help\build2.chm, 851,303 bytes
+Compression decreased file by 891,849 bytes.
+
+-- Compile completed on 07/12/2014 00:05:33

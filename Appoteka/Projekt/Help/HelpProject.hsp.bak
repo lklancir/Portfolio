@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentXProject Id="6e059481-c05e-42a6-85b6-db39e6aff6e1" Version="2011.1">
+  <Features />
+  <SeparateFiles>false</SeparateFiles>
+  <Flags>
+    <Flag Id="{46CEF21D-3301-4517-A875-A0906828390E}" HighlightColor="#FFA1FFD0">Exclude from Online</Flag>
+    <Flag Id="{4AAE0FD4-7313-4FEE-A25F-0785B885F736}" HighlightColor="#FFFFFFA1">Exclude from Booklet</Flag>
+  </Flags>
+  <PropertyDefinitions />
+  <PropertyDefinitionValues />
+  <Title />
+  <GlossaryProjectPlugin>
+    <IsGlossaryOutputEnabled>true</IsGlossaryOutputEnabled>
+    <Glossary>
+      <GlossaryItems />
+      <Title />
+    </Glossary>
+  </GlossaryProjectPlugin>
+  <HelpProjectPlugin ShowGettingStartedPage="true" />
+  <OtherFilesProjectPlugin>
+    <OtherFiles>
+      <OtherFile Id="1b53c79a-b191-4324-89d0-82268b13c7e3" FileName="stylesheets\customstyles.css" SourceData="" BuildFlags="" />
+      <OtherFile Id="249846b3-5e0d-42a2-b942-491fd5051ab4" FileName="images\loginScreen.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="018d8be9-505a-4a64-a692-79a4462f5aea" FileName="images\korisnickiPodaci.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="109741af-a2d9-43ad-a116-5ded187287e3" FileName="images\provjeraKlijenta.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="580e81e9-7f8a-40e4-9aa7-8ee4ca3fe048" FileName="images\provjeraKlijentaPodaci.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="f74271ad-1548-4645-a52f-19dcb6a4abdc" FileName="images\provjereniKlijent.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="ac8b0cea-4c37-4e85-863a-0f80b3a905e1" FileName="images\lijekoviNaReceptu.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="2fb49337-afc1-4f79-9175-d65261e318c4" FileName="images\receptiUpripremi.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="b0c94743-ba1c-4e2b-9676-f980d347d05d" FileName="images\popisLijekova.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="5b2a2f70-407a-4027-9c44-c5c02829b6e8" FileName="images\lijekoviPretrazivanje.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="a9e95618-951b-4bbd-a799-b458fc1777f6" FileName="images\lijekNovi.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="f5805bad-9a66-423f-a608-f489e062ad5a" FileName="images\lijekoviOdabirKategorije.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="d9458e6a-89b9-45be-90a9-bd1afe8011eb" FileName="images\lijekoviIzmjena.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="2f63547c-27a9-4f80-97dd-a2cb13663956" FileName="images\lijekBrisanje.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="e4180c72-5bd9-4aed-aeda-bab2230ba9ed" FileName="..\..\..\narudzbePopis.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="788ca99c-b496-42ed-a4f5-3e71b6e61ef6" FileName="images\popisNarudzbe.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="1f10ae28-b9ad-4f80-b3c3-0ac1cb760e92" FileName="images\narudzbeNova.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="3089766f-e992-430b-959e-069d08a7e2b0" FileName="images\narudzbeDodavanjeLijekova.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="22e8dc05-ae30-4a71-92fa-de5b9c885a8d" FileName="images\narudzbeDodaniLijekovi.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="ae218fc9-bb11-439d-9e6a-6b5593f4176c" FileName="images\popisRacuni.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="5777f794-1600-4ce0-a077-33f7d4cc04ce" FileName="images\racunNovi.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="34cb4a01-991c-4269-9245-842a4c979885" FileName="images\racunDodavanjeStavki.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="205a804e-b42d-4a25-b893-19d0acdfac07" FileName="images\racunDodaniArtikli.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="8cc699b7-0d75-4f30-91d6-a9ed8272846a" FileName="images\racunIznosi.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="031d88fd-9b7f-4a36-b324-bd963533c4d7" FileName="images\racunProvjera.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="0114d962-40af-49c7-ab41-b31a1477afeb" FileName="images\popisZaposlenici.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="90ba3d45-4f43-440c-b8e9-afdc95bc53d5" FileName="images\zaposlenikNovi.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="159650f9-bfb3-4083-ba06-68b5ccb23967" FileName="images\zaposlenikIzmjena.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="644e5194-7543-43b6-a750-32ab912e4243" FileName="images\popisDobavljaci.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="d6714d78-9f03-4c5f-9daf-58cf784a4219" FileName="images\dobavljacNovi.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="ae18e506-95f5-4f47-99c3-aa5ed8f4f094" FileName="images\dobavljacIzmjena.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="0c6b0cf2-1a70-407a-b578-d90d70bb8b40" FileName="images\popisKategorije.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="8fe6694d-fafd-4b18-9d7c-003513103669" FileName="images\kategorijaNova.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="85f933aa-64c8-47d7-bba4-882235d96f73" FileName="images\kategorijaDodavanjeLadica.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="06b8a3d5-b56f-4f17-94ac-5ae32b741372" FileName="images\kategorijaIzmjena.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="9e177bec-b43e-4528-8e0b-0e3ab8c1e08e" FileName="images\ladicePopis.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="4fa22591-2335-4777-836e-c0e716931251" FileName="images\ladicaNova.png" SourceData="" BuildFlags="" />
+      <OtherFile Id="2490299e-c6be-42e4-adf8-ee4fe04aae15" FileName="images\ladicaIzmjeni.png" SourceData="" BuildFlags="" />
+    </OtherFiles>
+    <DefaultStylesheet>stylesheets\customstyles.css</DefaultStylesheet>
+    <DefaultCaptureDirectory></DefaultCaptureDirectory>
+  </OtherFilesProjectPlugin>
+  <SourceControlProjectPlugin />
+  <TasksProjectPlugin>
+    <Tasks>
+      <TaskItems />
+    </Tasks>
+  </TasksProjectPlugin>
+  <BookletsProjectPlugin />
+  <TableOfContents>
+    <TocLayout Id="c7552482-a1ae-44a2-a9fc-c757d62b5073">
+      <Name />
+      <Description />
+      <RootNodes>
+        <TocNode Name="" Id="a6173c0b-e804-4b95-a0e6-9a1dc1859372" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
+          <CaptionTemplate />
+          <ChildNodes />
+          <TargetItemId>e1f733e8-2676-44c8-83e6-ca3ef783987e</TargetItemId>
+          <TargetItemBookmark></TargetItemBookmark>
+        </TocNode>
+        <TocNode Name="" Id="f38d5e93-d2d4-4221-85dc-f647740a790a" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
+          <CaptionTemplate />
+          <ChildNodes />
+          <TargetItemId>00fad1cc-afe3-404a-86af-a265a0c2d8e1</TargetItemId>
+          <TargetItemBookmark></TargetItemBookmark>
+        </TocNode>
+        <TocNode Name="" Id="e3d8b528-cc32-4d3e-8f6b-4a52a989de3d" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
+          <CaptionTemplate />
+          <ChildNodes />
+          <TargetItemId>3ec03ec4-5de4-4166-b484-87f8842fc946</TargetItemId>
+          <TargetItemBookmark></TargetItemBookmark>
+        </TocNode>
+        <TocNode Name="" Id="5d2f089a-5de7-4762-bc96-85aafe6948d4" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
+          <CaptionTemplate />
+          <ChildNodes />
+          <TargetItemId>fec8e6e7-80db-4ce5-9527-9933ddc29e4d</TargetItemId>
+          <TargetItemBookmark></TargetItemBookmark>
+        </TocNode>
+        <TocNode Name="" Id="c15e1b87-bd56-4046-ace0-e3a385356e40" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
+          <CaptionTemplate />
+          <ChildNodes />
+          <TargetItemId>425a68ff-0a8f-4c68-bcb1-bc2da617ee4b</TargetItemId>
+          <TargetItemBookmark></TargetItemBookmark>
+        </TocNode>
+        <TocNode Name="" Id="7a93a1a8-53e5-4b1b-bc73-9cff0e68ca06" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
+          <CaptionTemplate />
+          <ChildNodes />
+          <TargetItemId>fcfb59c6-0852-410f-99e2-f8689a702736</TargetItemId>
+          <TargetItemBookmark></TargetItemBookmark>
+        </TocNode>
+        <TocNode Name="" Id="c99afb6f-f955-428a-ba74-0dc603db1b41" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
+          <CaptionTemplate />
+          <ChildNodes />
+          <TargetItemId>36541a54-9d3d-49bc-9acd-0b7007131380</TargetItemId>
+          <TargetItemBookmark></TargetItemBookmark>
+        </TocNode>
+        <TocNode Name="" Id="883c759d-6ab8-43a7-8fa0-24af769a8017" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
+          <CaptionTemplate />
+          <ChildNodes />
+          <TargetItemId>cce849dc-a42b-4981-9125-ebd3c37fcb4b</TargetItemId>
+          <TargetItemBookmark></TargetItemBookmark>
+        </TocNode>
+        <TocNode Name="" Id="75d81562-6b4e-4c68-b06b-3852596cea84" IconIndex="-1" IsNew="false" Target="" DependsOnItemTypeName="" DependsOnItemTypeFilter="" DependsOnMinimumCount="0" DependsOnStillProcessChildNodes="false" BuildFlags="" NodeType="PROJECTITEM">
+          <CaptionTemplate />
+          <ChildNodes />
+          <TargetItemId>5d40576b-4fa4-4823-b859-2ebe7960e322</TargetItemId>
+          <TargetItemBookmark></TargetItemBookmark>
+        </TocNode>
+      </RootNodes>
+    </TocLayout>
+  </TableOfContents>
+  <TopicsProjectPlugin>
+    <TopicCategories>
+      <TopicCategory Id="-" AutoIndex="false">
+        <Caption m="2009-09-11T10:57:19.7639331Z">(Un-categorized)</Caption>
+        <ChildTopicCategories />
+        <Topics>
+          <Topic Id="f5cc6681-6e3f-4439-bda4-dd92e78f7bf0" Status="New Topic" CreatedOn="2014-07-11T15:02:43.9868684Z" ModifiedOn="2014-07-11T18:38:25.4721795Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Dobro dosli u Appoteku" BuildFlags="">
+            <Title />
+            <ContentsTitle />
+            <Notes></Notes>
+            <TopicSections>
+              <TopicSection Name="BodyText">
+                <Content m="2014-07-11T18:38:25.4721795Z">&lt;P&gt;Aplikacija Appoteka je aplikacija namjenjena za poboljšanje i ubrzanje poslovnog procesa u ljekarnama. Aplikacija nudi mnoge mogućnosti od kojih se ističu: Provjera klijenta po jedinstvenom broju zdravstvene iskaznice koja omogućava dohvaćanje podataka iz baze podataka Hrvatskog zavoda za zdravstveno osiguranje, te se na taj način vrlo lako mogu provjeriti recepti koje je doktor prepisao provjerenom klijentu. Aplikacija također nudi i mogućnost upravljanja lijekovima, narudžbama i računima. Upravljanje lijekovima omogućava dodavanje, izmjenu, pretraživanje i brisanje lijekova, te uz to olakšava korisniku aplikacije da u svakom trenutku zna koji lijek je uskladištio gdje. Upravljanje narudžbama omogućava dodavanje, brisanje i izmjenu narudžbi. Aplikacija korisnika upozorava kada je količina lijekova ispod optimalne razine kako bi se isti&amp;nbsp;lijekovi mogli naručiti prije nego njihova količina bude svedena na nulu. Upravljanje računima omogućava&amp;nbsp;dodavanje,&amp;nbsp;provjeru i brisanje računa te se na taj način vrlo lako mogu provjeriti izdani računi, ili se prilikom greške isti mogu brisati.&amp;nbsp;Upravljanje je također moguće i kod zaposlenika, dobavljača, kategorija lijekova i ladica u koje se lijekovi dodaju. Za korištenje aplikacije potrebno se uspješno logirati u aplikaciju uz pomoć korisničkih podataka koji su jedinstveni za svakog zaposlenika, a dodjeljuje ih administrator aplikacije ili poslovođa određene ljekarne. Sve ostale funkcionalnosti ove aplikacije opisane su unutar kategorije "Pomoć".&lt;/P&gt;</Content>
+              </TopicSection>
+            </TopicSections>
+            <TopicLinks />
+            <TopicKeywords />
+            <PropertyDefinitionValues />
+            <ExcludedOtherFiles />
+          </Topic>
+        </Topics>
+      </TopicCategory>
+      <TopicCategory Id="CONTENTSNIPPETS" AutoIndex="false">
+        <Caption m="2014-07-11T15:00:48.2683911Z">Content Snippets</Caption>
+        <ChildTopicCategories />
+        <Topics />
+      </TopicCategory>
+      <TopicCategory Id="4e2a960c-79d6-4ad3-92d8-5d1d5b4e48f9" AutoIndex="false">
+        <Caption m="2014-07-11T15:16:15.9149643Z">Pomoć</Caption>
+        <ChildTopicCategories>
+          <TopicCategory Id="524d6936-ed92-4940-8d8e-82b18e2c48b6" AutoIndex="false">
+            <Caption m="2014-07-11T15:56:43.2277735Z">Lijekovi, narudžbe i računi</Caption>
+            <ChildTopicCategories />
+            <Topics>
+              <Topic Id="3ec03ec4-5de4-4166-b484-87f8842fc946" Status="New Topic" CreatedOn="2014-07-11T15:56:46.7674747Z" ModifiedOn="2014-07-11T16:50:54.940668Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Pretrazivanje, dodavanje, izmjena i brisanje lijekova" BuildFlags="">
+                <Title />
+                <ContentsTitle />
+                <Notes></Notes>
+                <TopicSections>
+                  <TopicSection Name="BodyText">
+                    <Content m="2014-07-11T16:50:54.940668Z">&lt;P&gt;Klikom na gumb "Browse" u glavnom meniju otvara se izbor od tri stavke, to su "Lijekovi", "Narudžbe" i&amp;nbsp;"Računi". Klikom na gumb "Lijekovi" otvara se prozor u kojemu se nalazi popis svih lijekova koji su trenutno uneseni u aplikaciju te su prikazani svi relevantni podaci o tim istim lijekovima.&lt;/P&gt;
+&lt;P&gt;Klikom na određeni lijek iz popisa lijekova u tablici "Kategorije selektiranog" pojavljuju se kategorije lijekova kojima označeni lijek pripada. U tablici "Kritične zalihe" prikazani su svi lijekovi kojima je količina na skladištu ispod optimalne količine kako bi se korisnik upozorio da iste treba naručiti.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 362px; WIDTH: 745px" border=0 alt="" src="images/popisLijekova.png" width=1032 height=454&gt;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi pretražiti dali određeni lijek postoji u aplikaciji, ili želi provjeriti određene podatke o tom lijeku, naziv toga lijeka može upisati u polje "Tražilica" te će se klikom na gumb "Traži" pronađeni lijek automatski označiti u popisu lijekova.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 384px; WIDTH: 744px" border=0 alt="" src="images/lijekoviPretrazivanje.png" width=980 height=426&gt;&lt;/P&gt;
+&lt;P&gt;Dodavanje novog lijeka moguće je klikom na gumb "Novi" nakon čega se otvara prozor u kojemu se unose podaci o lijeku kojeg želimo unijeti.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/lijekNovi.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što smo unjeli sve podatke o lijeku koji želimo dodati, možemo mu dodati kategoriju tako da pri prodaji lijeka možemo tražiti lijekove po njihovom namjenjenom djelovanju. Dodane kategorije također je moguće i brisati, a prilikom dodavanja ili brisanja kategorija moguće je klikom na gumb "Osvježi" osvježiti podatke kako bi vidjeli dali smo sve podatke dobro unijeli. Klikom na gumb "Završi" dodajemo novi lijek u aplikaciju te nam aplikacija porukom javlja dali je dodavanje lijeka bilo uspješno. Klikom na gumb "Odustani" možemo odustati od bilokakvih promjena koje smo napravili u ovom prozoru.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 327px; WIDTH: 739px" border=0 alt="" src="images/lijekoviOdabirKategorije.png" width=739 height=334&gt;&lt;/P&gt;
+&lt;P&gt;Dodavanje kategorije lijeka moguće je označavanjem željene kategorije iz tablice "Kategorije" te klikom na gumb "Dodaj" nakon čega se u tablici "Dodane kategorije" pojavljuje dodana kategorija. Kada smo dodali sve željene kategorije, klikom na gumb "Završi" izabrane kategorije se pojavljuju u tablici "Kategorije" u prozoru za dodavanje novog lijeka.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi izmjeniti određeni lijek, to može napraviti klikom na gumb "Izmjeni" pri čemu se otvara novi prozor u kojemu se nalaze podaci odabranog lijeka. Nakon što željene podatke izmjeni, potvrdu o izmjeni lijeka može napraviti klikom na gumb "Završi" nakon čega će se svi promjenjeni podaci spremiti.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/lijekoviIzmjena.png"&gt;&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi obrisati određeni lijek iz aplikacije, to može napraviti klikom na gumb "Izbriši" nakon čega će aplikacija korisnika pitati dali je siguran u svoj izbor. Klikom na gumb "Yes" lijek će se obrisati, dok će se klikom na gumb "No" odustati od postupka brisanja lijeka.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/lijekBrisanje.png"&gt;&lt;/P&gt;
+&lt;P&gt;Klikom na gumb "Natrag" aplikacija korisnika vraća na početni zaslon.&lt;/P&gt;</Content>
+                  </TopicSection>
+                </TopicSections>
+                <TopicLinks />
+                <TopicKeywords />
+                <PropertyDefinitionValues />
+                <ExcludedOtherFiles />
+              </Topic>
+              <Topic Id="fec8e6e7-80db-4ce5-9527-9933ddc29e4d" Status="New Topic" CreatedOn="2014-07-11T15:57:15.0730851Z" ModifiedOn="2014-07-11T18:01:08.5755652Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Dodavanje, izmjena i brisanje narudzbi" BuildFlags="">
+                <Title />
+                <ContentsTitle />
+                <Notes></Notes>
+                <TopicSections>
+                  <TopicSection Name="BodyText">
+                    <Content m="2014-07-11T18:01:08.5755652Z">&lt;P&gt;Klikom na gumb "Browse" u glavnom meniju otvara se izbor od tri stavke, to su "Lijekovi", "Narudžbe" i&amp;nbsp;"Računi". Klikom na gumb "Narudžbe" otvara se prozor u kojemu se nalazi popis svih&amp;nbsp;narudžbi koje su trenutno unesene u aplikaciju te su prikazani svi relevantni podaci o tim istim narudžbama.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 387px; WIDTH: 742px" border=0 alt="" src="images/popisNarudzbe.png" width=1028 height=452&gt;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi napraviti novu narudžbu, to može klikom na gumb "Nova" pri čemu se otvara novi prozor u kojemu korisnik aplikacije može unijeti podatke o novoj narudžbi.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/narudzbeNova.png"&gt;&lt;/P&gt;
+&lt;P&gt;Kada je korisnik aplikacije odabrao dobavljača, klikom na gumb "Dodaj" otvara se novi prozor u kojemu se dodaju lijekovi koje korisnik aplikacije želi naručiti. U tom prozoru vidljiv je sav popis lijekova u aplikaciji te podaci o tim lijekovima.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 382px; WIDTH: 734px" border=0 alt="" src="images/narudzbeDodavanjeLijekova.png" width=864 height=406&gt;&lt;/P&gt;
+&lt;P&gt;Određene lijekove koje želimo naručiti možemo naručiti tako da ih označimo te ih dodamo klikom na gumb "Dodaj". Kada su svi lijekovi koje želimo naručiti dodani, klikom na gumb "Završi" oni se prikazuju u tablici nove naružbe.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/narudzbeDodaniLijekovi.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što su lijekovi koje želimo naručiti uneseni u tablicu nove narudžbe, odredimo količinu pojedinog lijeka kojeg želimo naručiti i nakon toga klikom na gumb "Osvježi" kako bi se za unijete količine izračunao iznos pojedinog lijeka te ukupan iznos. Klikom na gumb "Izdaj" aplikacija nam javlja da smo uspješno dodali novu narudžbu te nudi mogućnost ispisa narudžbe. Klikom na gumb "Izlaz" poništava se postupak dodavanja nove narudžbe.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi izmijeniti određenu narudžbu to može učiniti odabirom željene narudžbe i klikom na gumb "Izmijeni" nakon čega mu se nudi mogućnost dodavanja novih lijekova u narudžbu ili izmjene količina prethodno unesenih lijekova.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi izbrisati određenu narudžbu to može učiniti odabirom željene narudžbe i klikom na gumb "Izbriši", nakon čega se javlja poruka aplikacije u kojoj korisnik mora potvrditi da je siguran u svoj izbor. Klikom na gumb "Yes" odabrana narudžba se briše, dok se klikom na gumb "No" od postupka brisanja odustaje.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Klikom na gumb "Natrag" aplikacija korisnika vraća na početni zaslon aplikacije.&lt;/P&gt;</Content>
+                  </TopicSection>
+                </TopicSections>
+                <TopicLinks />
+                <TopicKeywords />
+                <PropertyDefinitionValues />
+                <ExcludedOtherFiles />
+              </Topic>
+              <Topic Id="425a68ff-0a8f-4c68-bcb1-bc2da617ee4b" Status="New Topic" CreatedOn="2014-07-11T15:57:32.0067785Z" ModifiedOn="2014-07-11T19:09:27.9785691Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Dodavanje, provjera i brisanje racuna" BuildFlags="">
+                <Title />
+                <ContentsTitle />
+                <Notes></Notes>
+                <TopicSections>
+                  <TopicSection Name="BodyText">
+                    <Content m="2014-07-11T19:09:27.9785691Z">&lt;P&gt;Klikom na gumb "Browse" u glavnom meniju otvara se izbor od tri stavke, to su "Lijekovi", "Narudžbe" i&amp;nbsp;"Računi". Klikom na gumb "Računi" otvara se prozor u kojemu se nalazi popis svih&amp;nbsp;računa koji su trenutno uneseni u aplikaciju te su prikazani svi relevantni podaci o tim istim računima.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 400px; WIDTH: 742px" border=0 alt="" src="images/popisRacuni.png" width=1030 height=454&gt;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi napraviti novi račun, to može klikom na gumb "Novi" pri čemu se otvara novi prozor u kojemu korisnik aplikacije može unijeti podatke o novom računu.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/racunNovi.png"&gt;&lt;/P&gt;
+&lt;P&gt;Klikom na gumb "Dodaj" otvara se novi prozor u kojemu se dodaju lijekovi koje korisnik aplikacije želi izdati računom. U tom prozoru vidljiv je sav popis lijekova u aplikaciji te podaci o tim lijekovima.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 415px; WIDTH: 740px" border=0 alt="" src="images/racunDodavanjeStavki.png" width=906 height=444&gt;&lt;/P&gt;
+&lt;P&gt;Željeni lijekovi mogu se dodati na način da se označe i klikom na gumb "Dodaj". Nakon što je korisnik dodao sve željene artikle klikom na gumb "Završi" isti artikli će se naći u tablici novog računa. Klikom na gumb "Odustani" postupak dodavanja artikala na račun se poništava.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/racunDodaniArtikli.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što su željeni artikli uspješno dodani u novi račun, potrebno je odrediti količinu lijekova koju izdajemo. Nakon što smo odredili količinu pojedinih lijekova, klikom na gumb "Osvježi"&amp;nbsp;izračunavaju se iznosi pojedinog lijeka koji su jednaki umnošku cijene i količine, te ukupan iznos koji je jednak sumi svih iznosa.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/racunIznosi.png"&gt;&lt;/P&gt;
+&lt;P&gt;Klikom na gumb "Izdaj" korisnik dodaje novi račun u aplikaciju, aplikacija javlja poruku kako je novi račun uspješno dodan te nudi mogućnost ispisa računa.&lt;/P&gt;
+&lt;P&gt;Klikom na gumb "Izlaz" poništava se dodavanje novog računa.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi provjeriti određeni račun, to može učiniti na način da označi željeni račun i klikne na gumb "Provjeri", klikom na gumb "Provjeri" otvara se novi prozor u kojemu su prikazani podaci o odabranom računu. Klikom na gumb "Natrag" aplikacija korisnika vraća u prozor sa popisom računa.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/racunProvjera.png"&gt;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi obrisati određeni račun to može učiniti na način da odabere račun koji želi obrisati i klikne na gumb "Izbriši". Klikom na gumb "Izbriši" aplikacija prikazuje poruku kako bi korisnik mogao potvrditi svoj odabir. Klikom na gumb "Yes", označeni račun se briše, dok se klikom na gumb "No" postupak brisanja računa poništava.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/lijekBrisanje.png"&gt;&lt;/P&gt;
+&lt;P&gt;Klikom na gumb "Natrag" aplikacija korisnika vraća na početni zaslon aplikacije.&lt;/P&gt;</Content>
+                  </TopicSection>
+                </TopicSections>
+                <TopicLinks />
+                <TopicKeywords />
+                <PropertyDefinitionValues />
+                <ExcludedOtherFiles />
+              </Topic>
+            </Topics>
+          </TopicCategory>
+          <TopicCategory Id="5a80b202-91d0-47ac-8921-3d5824f668e2" AutoIndex="false">
+            <Caption m="2014-07-11T19:13:38.3587148Z">Zaposlenici, dobavljači, kategorije lijekova i ladice</Caption>
+            <ChildTopicCategories />
+            <Topics>
+              <Topic Id="fcfb59c6-0852-410f-99e2-f8689a702736" Status="New Topic" CreatedOn="2014-07-11T19:13:47.9709456Z" ModifiedOn="2014-07-11T19:39:26.147868Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Dodavanje, izmjena i brisanje zaposlenika" BuildFlags="">
+                <Title />
+                <ContentsTitle />
+                <Notes></Notes>
+                <TopicSections>
+                  <TopicSection Name="BodyText">
+                    <Content m="2014-07-11T19:39:26.147868Z">&lt;P&gt;Klikom na gumb "Managment" u glavnom meniju otvara se izbor od četiri stavke, to su "Zaposlenici", "Dobavljači",&amp;nbsp;"Kategorije lijekova" i "Ladice". Klikom na gumb "Zaposlenici" otvara se prozor u kojemu se nalazi popis svih&amp;nbsp;zaposlenika koji su trenutno uneseni u aplikaciju te su prikazani svi relevantni podaci o tim istim zaposlenicima.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 418px; WIDTH: 744px" border=0 alt="" src="images/popisZaposlenici.png" width=907 height=426&gt;&lt;/P&gt;
+&lt;P&gt;Ako korisnik aplikacije želi dodati novog zaposlenika, to može učiniti klikom na gumb "Novi", pri čemu se otvara novi prozor u kojemu se unose podaci o novom zaposleniku.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/zaposlenikNovi.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što su uneseni svi podaci o novom zaposleniku, klikom na gumb "Dodaj" dodaje se novi zaposlenik u aplikaciju te aplikacija javlja korisniku da je novi zaposlenik uspješno dodan. Klikom na gumb "Odustani" postupak dodavanja novog zaposlenika se poništava.&lt;/P&gt;
+&lt;P&gt;Ako korisnik aplikacije želi izmijeniti podatke o određenom zaposleniku, to može učiniti na način da odabere željenog zaposlenika i&amp;nbsp;klikne na gumb "Izmjeni" nakon čega se otvara novi prozor u kojemu se nalaze svi podaci o odabranom zaposleniku.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/zaposlenikIzmjena.png"&gt;&lt;/P&gt;
+&lt;P&gt;Klikom na gumb "Dodaj" izmjenjeni podaci o zaposleniku se spremaju, dok se klikom na gumb "Odustani" postupak izmjene podataka poništava.&lt;/P&gt;
+&lt;P&gt;Ako korisnik aplikacije želi obrisati određenog zaposlenika, to može učiniti na način da željenog zaposlenika označi te klikne na gumb "Izbriši". Klikom na gumb "Izbriši" aplikacija pokazuje poruku kojom se želi potvrditi odluka korisnika aplikacije, klikom na gumb "Yes" označeni zaposlenik se briše, dok se klikom na gumb "No" odustaje od brisanja zaposlenika.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/lijekBrisanje.png"&gt;&lt;/P&gt;
+&lt;P&gt;Klikom na gumb "Natrag", aplikacija korisnika vraća na početni zaslon aplikacije.&lt;/P&gt;</Content>
+                  </TopicSection>
+                </TopicSections>
+                <TopicLinks />
+                <TopicKeywords />
+                <PropertyDefinitionValues />
+                <ExcludedOtherFiles />
+              </Topic>
+              <Topic Id="36541a54-9d3d-49bc-9acd-0b7007131380" Status="New Topic" CreatedOn="2014-07-11T19:14:20.1294194Z" ModifiedOn="2014-07-11T19:58:41.611634Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Dodavanje, izmjena i brisanje dobavljaca" BuildFlags="">
+                <Title />
+                <ContentsTitle />
+                <Notes></Notes>
+                <TopicSections>
+                  <TopicSection Name="BodyText">
+                    <Content m="2014-07-11T19:58:41.611634Z">&lt;P&gt;Klikom na gumb "Managment" u glavnom meniju otvara se izbor od četiri stavke, to su "Zaposlenici", "Dobavljači",&amp;nbsp;"Kategorije lijekova" i "Ladice". Klikom na gumb "Dobavljači" otvara se prozor u kojemu se nalazi popis svih&amp;nbsp;dobavljača koji su trenutno uneseni u aplikaciju te su prikazani svi relevantni podaci o tim istim dobavljačima.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 405px; WIDTH: 744px" border=0 alt="" src="images/popisDobavljaci.png" width=974 height=448&gt;&lt;/P&gt;
+&lt;P&gt;Ako korisnik aplikacije želi dodati novog dobavljača u aplikaciju, to može učiniti klikom na gumb "Novi" nakon čega se otvara novi prozor u kojemu je potrebno unijeti sve navedene podatke o dobavljaču.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/dobavljacNovi.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što korisnik aplikacije unese sve podatke o dobavljaču, klikom na gumb "Spremi" novi dobavljač se dodaje u aplikaciju, te aplikacija porukom javlja kako je novi dobavljač uspješno unesen. Klikom na gumb "Odustani" postupak dodavanja novog dobavljača se poništava.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Ako korisnik aplikacije želi izmijeniti podatke o postojećem dobavljaču, to&amp;nbsp;može učiniti na način da označi željenog dobavljača te klikne na gumb "Izmijeni". Klikom na gumb "Izmijeni" otvara se novi prozor u kojem su prikazani podaci o označenom dobavljaču.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/dobavljacIzmjena.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što je korisnik aplikacije promijenio podatke o odabranom dobavljaču, te podatke može spremiti klikom na gumb "Spremi". Klikom na gumb "Odustani" postupak izmijene označenog dobavljača se poništava.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Ako korisnik aplikacije želi obrisati određenog dobavljača iz aplikacije, to može učiniti na način da označi željenog dobavljača te klikne na gumb "Izbriši", nakon čega aplikacija pokazuje poruku kojom se želi potvrditi odabir korisnika. Klikom na gumb "Yes" označeni dobavljač će se obrisati, dok će se klikom na gumb "No" odustati od brisanja dobavljača.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/lijekBrisanje.png"&gt;&lt;/P&gt;
+&lt;P&gt;Klikom na gumb "Natrag" aplikacija korisnika vraća na početni zaslon aplikacije.&lt;/P&gt;</Content>
+                  </TopicSection>
+                </TopicSections>
+                <TopicLinks />
+                <TopicKeywords />
+                <PropertyDefinitionValues />
+                <ExcludedOtherFiles />
+              </Topic>
+              <Topic Id="cce849dc-a42b-4981-9125-ebd3c37fcb4b" Status="New Topic" CreatedOn="2014-07-11T19:14:54.405985Z" ModifiedOn="2014-07-11T21:24:21.1656581Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Dodavanje, izmjena i brisanje kategorija lijekova" BuildFlags="">
+                <Title />
+                <ContentsTitle />
+                <Notes></Notes>
+                <TopicSections>
+                  <TopicSection Name="BodyText">
+                    <Content m="2014-07-11T21:24:21.1646861Z">&lt;P&gt;Klikom na gumb "Managment" u glavnom meniju otvara se izbor od četiri stavke, to su "Zaposlenici", "Dobavljači",&amp;nbsp;"Kategorije lijekova" i "Ladice". Klikom na gumb "Kategorije lijekova" otvara se prozor u kojemu se nalazi popis svih&amp;nbsp;kategorija lijekova&amp;nbsp;koje su trenutno unesene u aplikaciju te su prikazani svi relevantni podaci o tim istim kategorijama. Također za pojedinu kategoriju prikazani su svi lijekovi koji se nalaze u toj kategoriji te naziv ladica u kojima se te kategorije lijekova nalaze.&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 392px; WIDTH: 742px" border=0 alt="" src="images/popisKategorije.png" width=1016 height=445&gt;&lt;/P&gt;
+&lt;P&gt;Ako korisnik aplikacije želi unijeti novu kategoriju lijekova u aplikaciju to može učiniti klikom na gumb "Novi" pri čemu se otvara novi prozor u kojemu je potrebno unijeti podatke o novoj kategoriji.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/kategorijaNova.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što korisnik unese podatke o novoj kategoriji lijeka, klikom na gumb "Dodaj ladicu" može dodati ladice u kojiima će ta kategorija lijeka biti zastupljena. Nakon što su željene ladice dodane, moguće ih je brisati na način da se označi željena ladica te&amp;nbsp;klikne na gumb "Izbriši ladicu", klikom na gumb "Spremi" nova kategorija lijekova se sprema te aplikacija javlja kako je nova kategorija uspješno spremljena. Klikom na tipku "Izlaz" postupak dodavanja nove kategorije lijekova se poništava.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/kategorijaDodavanjeLadica.png"&gt;&lt;/P&gt;
+&lt;P&gt;Ladice je moguće dodati u kategoriju na način da se željena ladica označi i da se klikne na gumb "Dodaj". Kada smo dodali sve ladice za koje želimo da određenea kategorija lijekova bude zastupljena u njima, kliknemo na gumb "Završi" nakon čega će se odabrane ladice pojaviti u tablici nove kategorije. Klikom na gumb "Odustani" postupak dodavanja ladica u kategoriju se poništava.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Ako korisnik aplikacije želi izmijeniti određenu kategoriju lijekova, to može učiniti na način da označi željenu kategoriju lijekova te klikne na gumb "Izmijeni". Klikom na gumb "Izmijeni" otvara se novi prozor u kojemu se nalaze podaci o označenoj kategoriji lijekova, te ladice u kojima je ta kategorija lijekova zastupljena.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/kategorijaIzmjena.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što korisnik aplikacije izmijeni željene podatke o kategoriji lijeka, klikom na gumb "Spremi" izmijenjena kategorija lijekova se sprema u aplikaciju, dok se klikom na gumb "Izlaz" postupak ažuriranja kategorije lijeka poništava.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi izbrisati određenu kategoriju lijeka to može učiniti na način da označi željenu kategoriju i klikne na gumb "Izbriši", nakon što korisnik klikne na gumb "Izbriši" aplikacija će prikazati poruku kojom se nastoji potvrditi odluka korisnika. Klikom na gumb "Yes" iz aplikacije se briše označena kategorija, dok se klikom na gumb "No" odustaje od brisanja kategorije.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/lijekBrisanje.png"&gt;&lt;/P&gt;
+&lt;P&gt;Klikom na gumb "Natrag" aplikacija korisnika vraća na početni zaslon aplikacije.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;</Content>
+                  </TopicSection>
+                </TopicSections>
+                <TopicLinks />
+                <TopicKeywords />
+                <PropertyDefinitionValues />
+                <ExcludedOtherFiles />
+              </Topic>
+              <Topic Id="5d40576b-4fa4-4823-b859-2ebe7960e322" Status="New Topic" CreatedOn="2014-07-11T19:15:19.4181267Z" ModifiedOn="2014-07-11T21:41:22.6121623Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Dodavanje, izmjena i brisanje ladica" BuildFlags="">
+                <Title />
+                <ContentsTitle />
+                <Notes></Notes>
+                <TopicSections>
+                  <TopicSection Name="BodyText">
+                    <Content m="2014-07-11T21:41:22.6121623Z">&lt;P&gt;Klikom na gumb "Managment" u glavnom meniju otvara se izbor od četiri stavke, to su "Zaposlenici", "Dobavljači",&amp;nbsp;"Kategorije lijekova" i "Ladice". Klikom na gumb "Ladice" otvara se prozor u kojemu se nalazi popis svih&amp;nbsp;ladica koje su trenutno unesene u aplikaciju te su prikazani svi relevantni podaci o tim istim ladicama.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 397px; WIDTH: 744px" border=0 alt="" src="images/ladicePopis.png" width=865 height=393&gt;&lt;/P&gt;
+&lt;P&gt;Ako korisnik aplikacije želi dodati novu ladicu u aplikaciju, to može napraviti klikom na gumb "Nova ladica" pri čemu se otvara novi prozor u kojemu je potrebno unijeti sve podatke o novoj ladici.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/ladicaNova.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što su uneseni podaci o ladici klikom na gumb "Spremi" korisnik aplikacije može spremiti novu ladicu, a aplikacija će pritom prikazati poruku da je nova ladica uspješno dodana. Klkom na gumb "Izlaz" postupak dodavanja nove ladice se poništava.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi izmijeniti podatke o određenoj ladici, to može učiniti na način da odabere željenu ladicu te klikne na gumb "Izmijeni" nakon čega će se otvoriti prozor u kojemu će biti prikazani podaci o toj ladici.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/ladicaIzmjeni.png"&gt;&lt;/P&gt;
+&lt;P&gt;Kada je korisnik izmjenio podatke o ladici, klikom na gumb "Spremi" označena ladica se ažurira. Klikom na gumb "Izlaz" postupak ažuriranja označene ladice se poništava.&lt;/P&gt;
+&lt;P&gt;&amp;nbsp;&lt;/P&gt;
+&lt;P&gt;Ako korisnik želi obrisati određenu ladicu, to može učiniti na način da označi željenu ladicu i klikne na gumb "Izbriši", tada će aplikacija prikazati poruku kojom se želi potvrditi korisnikov odabir. Klikom na gumb "Yes" označena ladica će biti obrisana, dok će klikom na gumb "No" postupak brisanja ladice biti prekinut.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/lijekBrisanje.png"&gt;&lt;/P&gt;
+&lt;P&gt;Klikom na gumb "Natrag" aplikacija korisnika vraća na početni zaslon aplikacije.&lt;/P&gt;</Content>
+                  </TopicSection>
+                </TopicSections>
+                <TopicLinks />
+                <TopicKeywords />
+                <PropertyDefinitionValues />
+                <ExcludedOtherFiles />
+              </Topic>
+            </Topics>
+          </TopicCategory>
+        </ChildTopicCategories>
+        <Topics>
+          <Topic Id="e1f733e8-2676-44c8-83e6-ca3ef783987e" Status="New Topic" CreatedOn="2014-07-11T15:16:19.3411689Z" ModifiedOn="2014-07-11T15:26:55.1364873Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Logiranje u aplikaciju" BuildFlags="">
+            <Title />
+            <ContentsTitle />
+            <Notes></Notes>
+            <TopicSections>
+              <TopicSection Name="BodyText">
+                <Content m="2014-07-11T15:26:55.1355037Z">&lt;P&gt;Prije nego li je aplikaciju moguće koristiti, potrebno se uspješno logirati. Prilikom pokretanja aplikacije otvara se prozor u kojemu se nalazi polje "Korisničko ime" i polje "Lozinka" te gumb "Prijava". Podaci koji se koriste kako bi se korisnik aplikacije uspješno logirao u nju jedinstveni su za svakog zaposlenika, te ih dodjeljuje administrator aplikacije ili pak poslovođa ljekarne.&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/loginScreen.png"&gt;&lt;/P&gt;
+&lt;P&gt;U polje "Korisničko ime" unosi se podatak o korisničkom imenu koji je dodjeljen zaposleniku, a u polje "Lozinka" unosi se podatak o lozinki koji odgovara korisničkom imenu. Lozinka je podatak koji je također dodjeljen od strane administratora aplikacije ili poslovođe ljekarne. Nakon što su navedeni podaci uneseni, klikom na gumb "PRIJAVA" provjerava se točnost unesenih podataka, ako su podaci krivo uneseni, aplikacija porukom javlja da je određeni podatak krivo unesen. U ovom primjeru koristiti ćemo sljedeće korisničke podatke:&amp;nbsp;Korisničko ime = "joco", Lozinka = "2333".&lt;/P&gt;
+&lt;P&gt;&lt;IMG border=0 alt="" src="images/korisnickiPodaci.png"&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što je točnost podataka potvrđena, otvara se početni zaslon aplikacije i korisniku je omogućeno korištenje aplikacije.&lt;/P&gt;</Content>
+              </TopicSection>
+            </TopicSections>
+            <TopicLinks />
+            <TopicKeywords />
+            <PropertyDefinitionValues />
+            <ExcludedOtherFiles />
+          </Topic>
+          <Topic Id="00fad1cc-afe3-404a-86af-a265a0c2d8e1" Status="New Topic" CreatedOn="2014-07-11T15:28:26.1573895Z" ModifiedOn="2014-07-11T18:42:52.4963802Z" PageTypeName="" AutoIndex="true" HelpContextIds="" Name="Pocetni zaslon i provjera klijenta" BuildFlags="">
+            <Title />
+            <ContentsTitle />
+            <Notes></Notes>
+            <TopicSections>
+              <TopicSection Name="BodyText">
+                <Content m="2014-07-11T18:42:52.4953773Z">&lt;P&gt;Nakon što se korisnik uspješno logira u aplikaciju, otvara se početni zaslon uz pomoć kojeg je moguće provjeriti&amp;nbsp;podatke o klijentu koji ima zdravstveno osiguranje, ali je također iz početnog zaslona moguće pristupiti bilo kojem dijelu aplikacije ovisno o tome što je&amp;nbsp;korisniku aplikacije u određenom trenutku potrebno uz pomoć menija koji se nalazi u gornjem dijelu prozora.&lt;/P&gt;
+&lt;P&gt;Na početnom zaslonu se nalazi polje "Zdravstvena iskaznica" u koje se unosi jedinstveni broj zdravstvene iskaznice klijenta.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 380px; WIDTH: 744px" border=0 alt="" src="images/provjeraKlijenta.png" width=980 height=405&gt;&lt;/P&gt;
+&lt;P&gt;U ovom primjeru kao podatak za jedinstveni broj zdravstvene iskaznice koristit ćemo broj: "1111111111".&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 343px; WIDTH: 743px" border=0 alt="" src="images/provjeraKlijentaPodaci.png" width=1028 height=449&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što je korisnik aplikacije unjeo podatak o jedinstvenom broju zdravstvene iskaznice, klikom na gumb "Provjeri" iz baze podataka Hrvatskog zavoda za zdravstveno osiguranje dohvaćaju se relevantni podaci o klijentu kako bi mu se mogli izdati lijekovi koje mu je prepisao liječnik.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 425px; WIDTH: 740px" border=0 alt="" src="images/provjereniKlijent.png" width=896 height=531&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što su podaci o klijentu dohvaćeni iz baze podataka HZZO-a, u prozoru koji se pojavljuje nakon što korisnik klikne na gumb "Provjeri" pojavljuju se podaci osnovni podaci o klijentu. U tablici "HZZO recepti" moguće je vidjeti sve recepte koje je liječnik prepisao klijentu. Odabirom jednog od mogućih recepata, u tablici "Lijekovi na receptu" pojavljuju se svi lijekovi koji se nalaze na određenom receptu.&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 384px; WIDTH: 742px" border=0 alt="" src="images/lijekoviNaReceptu.png" width=877 height=525&gt;&lt;/P&gt;
+&lt;P&gt;Iz tablice "Lijekovi na receptu" moguće je odabrati jedan od ponuđenih lijekova te ga klikom na gumb "Dodaj stavku" dodati u tablicu "Recepti u pripremi".&lt;/P&gt;
+&lt;P&gt;&lt;IMG style="HEIGHT: 407px; WIDTH: 744px" border=0 alt="" src="images/receptiUpripremi.png" width=876 height=519&gt;&lt;/P&gt;
+&lt;P&gt;Nakon što je korisnik aplikacije odabrao sve lijekove koji su potrebni klijentu, klikom na gumb "Izdavanje racuna" otvara se prozor u kojemu korisnik aplikacije upisuje podatke koji su potrebni za izdavanje računa klijentu. Više o postupku izdavanja računa nalazi se u temi "Dodavanje, provjera i&amp;nbsp;brisanje racuna".&lt;/P&gt;</Content>
+              </TopicSection>
+            </TopicSections>
+            <TopicLinks />
+            <TopicKeywords />
+            <PropertyDefinitionValues />
+            <ExcludedOtherFiles />
+          </Topic>
+        </Topics>
+      </TopicCategory>
+    </TopicCategories>
+    <CustomTopicPropertyDefinitions />
+    <PropertyDefinitionValues />
+    <AutoNameDigits>0</AutoNameDigits>
+    <AutoNameLastNumber>0</AutoNameLastNumber>
+    <AutoNameEnabled>false</AutoNameEnabled>
+    <AutoNamePrefix></AutoNamePrefix>
+    <IncludeTopicNameInTitle>false</IncludeTopicNameInTitle>
+    <TopicEditorState>
+      <Attributes>
+        <Attribute key="scrollPosition" valuetype="integer">5</Attribute>
+        <Attribute key="SectionHeadingCollapsedseealsoSectionHeading" valuetype="string">true</Attribute>
+      </Attributes>
+    </TopicEditorState>
+  </TopicsProjectPlugin>
+  <WidgetsProjectPlugin>
+    <WidgetTypes Version="2011.1" />
+  </WidgetsProjectPlugin>
+  <TemplateFileFeaturesProjectPlugin />
+  <ProjectSearchProjectPlugin>
+    <ProjectSearchDefinitions />
+  </ProjectSearchProjectPlugin>
+  <ProjectProfiles>
+    <ProjectProfile Id="6b2cfb6d-7340-49af-9cfb-d31ec7a4a0d5" Name="Build1">
+      <DefaultItemQualifiedName>Dobro dosli u Appoteku</DefaultItemQualifiedName>
+      <StripMetadata>true</StripMetadata>
+      <AlwaysCopyTemplateFiles>true</AlwaysCopyTemplateFiles>
+      <OutputFileExtension>.html</OutputFileExtension>
+      <Title m="2014-07-11T21:51:17.6350483Z">Help</Title>
+      <ClearOutputDirectoryBeforeBuild>false</ClearOutputDirectoryBeforeBuild>
+      <IsNewIndicatorEnabled>false</IsNewIndicatorEnabled>
+      <IsNewDateTime></IsNewDateTime>
+      <PropertyDefinitionValues />
+      <IsTidyXhtmlEnabled>true</IsTidyXhtmlEnabled>
+      <CommunityOptions UseLocalProxyUrl="false" Enabled="false">
+        <ServerType>PublicEvaluation</ServerType>
+        <LocalProxyUrl></LocalProxyUrl>
+        <HostingAccessKey></HostingAccessKey>
+        <PrivateServerUrl></PrivateServerUrl>
+        <PrivateServerAccessKey></PrivateServerAccessKey>
+        <ProjectKey />
+      </CommunityOptions>
+      <HelpCompiler CompileHelpFile="true" IsWebOutputEnabled="false" IsMarkOfTheWebEnabled="false">
+        <MarkOfTheWebDomain>(0014)about:internet</MarkOfTheWebDomain>
+        <HelpFileVersion>Help3</HelpFileVersion>
+        <Help2Namespace>newprojecttest1</Help2Namespace>
+        <Help2FileId>Default</Help2FileId>
+        <Help2PluginToNamespaces></Help2PluginToNamespaces>
+        <Help2Plugin>false</Help2Plugin>
+        <RuntimeMerge></RuntimeMerge>
+        <IncludeTextPopupFile>false</IncludeTextPopupFile>
+        <Help3BuildIdentifier></Help3BuildIdentifier>
+        <Help3VendorName>Tim21</Help3VendorName>
+        <Help3CatalogName>Appoteka Help</Help3CatalogName>
+        <Help3CatalogVersion>100</Help3CatalogVersion>
+        <Help3CatalogLocaleText>hr-HR</Help3CatalogLocaleText>
+        <Help3TemplateName></Help3TemplateName>
+        <Help3ProductName>Appoteka</Help3ProductName>
+        <Help3BookName>Help</Help3BookName>
+        <IsHelp3CreateRegistrationScriptEnabled>true</IsHelp3CreateRegistrationScriptEnabled>
+        <IsHelp3RegisterLocallyEnabled>true</IsHelp3RegisterLocallyEnabled>
+        <IsHelp3SigningEnabled>false</IsHelp3SigningEnabled>
+        <IsHelp3ValidationEnabled>false</IsHelp3ValidationEnabled>
+        <IsHelp3KeywordsEnabled>false</IsHelp3KeywordsEnabled>
+        <BrowserHelpTemplateName>2012 Style</BrowserHelpTemplateName>
+        <IsCustomHtmlHelpWindowSettings>false</IsCustomHtmlHelpWindowSettings>
+        <CustomHtmlHelpWindowSettings>
+          <IsExpandVisible>true</IsExpandVisible>
+          <IsBackVisible>true</IsBackVisible>
+          <IsForwardVisible>true</IsForwardVisible>
+          <IsStopVisible>false</IsStopVisible>
+          <IsRefreshVisible>false</IsRefreshVisible>
+          <IsHomeVisible>false</IsHomeVisible>
+          <IsLocateVisible>true</IsLocateVisible>
+          <IsOptionsVisible>true</IsOptionsVisible>
+          <IsPrintVisible>true</IsPrintVisible>
+          <IsZoomVisible>false</IsZoomVisible>
+          <NavigationPaneWidth>200</NavigationPaneWidth>
+          <IsNavigationPaneInitiallyClosed>false</IsNavigationPaneInitiallyClosed>
+          <IsAutoSyncWithTocEnabled>true</IsAutoSyncWithTocEnabled>
+          <IsSearchTabVisible>true</IsSearchTabVisible>
+          <IsHistoryTabVisible>false</IsHistoryTabVisible>
+          <IsFavoritesTabVisible>true</IsFavoritesTabVisible>
+          <DefaultTab>Contents</DefaultTab>
+          <IsSaveUserWindowSettingsEnabled>true</IsSaveUserWindowSettingsEnabled>
+          <WindowSizeHeight>400</WindowSizeHeight>
+          <WindowSizeWidth>600</WindowSizeWidth>
+          <WindowLocationLeft>0</WindowLocationLeft>
+          <WindowLocationTop>0</WindowLocationTop>
+        </CustomHtmlHelpWindowSettings>
+        <Help3RedirectRelativePath>../</Help3RedirectRelativePath>
+        <HelpFileName>build1.mshc</HelpFileName>
+      </HelpCompiler>
+      <RuleEngine>
+        <Rules Caption="" IsReadOnly="false" MatchType="All" Id="root">
+          <Rules>
+            <RuleGroup Caption="" IsReadOnly="false" MatchType="All" Id="standard">
+              <Rules>
+                <Rule Caption="" IsReadOnly="false" MatchType="All" Id="outputtype">
+                  <Conditions>
+                    <RuleCondition Caption="" IsReadOnly="false" BuildFlagMatchType="None" Id="4c7ca296-f253-4ae9-9d90-ef8cb42183a8" Designer="BUILDFLAGS">
+                      <BuildFlags>{46CEF21D-3301-4517-A875-A0906828390E}</BuildFlags>
+                    </RuleCondition>
+                  </Conditions>
+                </Rule>
+              </Rules>
+            </RuleGroup>
+            <RuleGroup Caption="" IsReadOnly="false" MatchType="All" Id="custom">
+              <Rules />
+            </RuleGroup>
+          </Rules>
+        </Rules>
+      </RuleEngine>
+      <ShortFileNames GenerateShortFileNames="false" />
+      <TopicsProjectProfilePlugin>
+        <TemplateName>2012 Style</TemplateName>
+        <IncludeBreadcrumbs>true</IncludeBreadcrumbs>
+        <AutoGenerateTopicIndexEntries>true</AutoGenerateTopicIndexEntries>
+        <AutoGenerateCategoryIndexEntries>true</AutoGenerateCategoryIndexEntries>
+        <IncludeOnlyCompletedTopics>false</IncludeOnlyCompletedTopics>
+        <IsNewSource>CreationDateTime</IsNewSource>
+        <IsNewCustomTopicPropertyId></IsNewCustomTopicPropertyId>
+        <IsAnchorParsingEnabled>false</IsAnchorParsingEnabled>
+      </TopicsProjectProfilePlugin>
+      <BookletsProjectProfilePlugin>
+        <TemplateName></TemplateName>
+      </BookletsProjectProfilePlugin>
+      <WidgetsProjectProfilePlugin>
+        <IsIncludeInThisTopicWidgetEnabled>false</IsIncludeInThisTopicWidgetEnabled>
+        <InThisTopicWidgetHeadingsMinimum>5</InThisTopicWidgetHeadingsMinimum>
+        <InThisTopicWidgetTagName>H1</InThisTopicWidgetTagName>
+        <InThisTopicWidgetPrefix>$$In_This_Topic$$</InThisTopicWidgetPrefix>
+        <WidgetTypes Version="2011.1" />
+      </WidgetsProjectProfilePlugin>
+      <OtherFiles>
+        <IsLogoEnabled>false</IsLogoEnabled>
+        <LogoOtherFileName></LogoOtherFileName>
+        <IsGoogleAnalyticsEnabled>false</IsGoogleAnalyticsEnabled>
+        <GoogleAnalyticsId></GoogleAnalyticsId>
+        <IsOtherHeadContentEnabled>false</IsOtherHeadContentEnabled>
+        <OtherHeadContent></OtherHeadContent>
+      </OtherFiles>
+      <OutputDirectory>build</OutputDirectory>
+    </ProjectProfile>
+    <ProjectProfile Id="5e6fc666-4567-41ba-a659-d65ea3840f2b" Name="build2">
+      <DefaultItemQualifiedName>Dobro dosli u Appoteku</DefaultItemQualifiedName>
+      <StripMetadata>false</StripMetadata>
+      <AlwaysCopyTemplateFiles>true</AlwaysCopyTemplateFiles>
+      <OutputFileExtension>.html</OutputFileExtension>
+      <Title m="2014-07-11T21:59:04.5700397Z">Help</Title>
+      <ClearOutputDirectoryBeforeBuild>false</ClearOutputDirectoryBeforeBuild>
+      <IsNewIndicatorEnabled>true</IsNewIndicatorEnabled>
+      <IsNewDateTime></IsNewDateTime>
+      <PropertyDefinitionValues />
+      <IsTidyXhtmlEnabled>true</IsTidyXhtmlEnabled>
+      <CommunityOptions UseLocalProxyUrl="false" Enabled="false">
+        <ServerType>PublicEvaluation</ServerType>
+        <LocalProxyUrl></LocalProxyUrl>
+        <HostingAccessKey></HostingAccessKey>
+        <PrivateServerUrl></PrivateServerUrl>
+        <PrivateServerAccessKey></PrivateServerAccessKey>
+        <ProjectKey />
+      </CommunityOptions>
+      <HelpCompiler CompileHelpFile="true" IsWebOutputEnabled="false" IsMarkOfTheWebEnabled="false">
+        <MarkOfTheWebDomain>(0014)about:internet</MarkOfTheWebDomain>
+        <HelpFileVersion>HtmlHelp1</HelpFileVersion>
+        <Help2Namespace>HelpProject</Help2Namespace>
+        <Help2FileId>build2</Help2FileId>
+        <Help2PluginToNamespaces></Help2PluginToNamespaces>
+        <Help2Plugin>false</Help2Plugin>
+        <RuntimeMerge></RuntimeMerge>
+        <IncludeTextPopupFile>false</IncludeTextPopupFile>
+        <Help3BuildIdentifier></Help3BuildIdentifier>
+        <Help3VendorName></Help3VendorName>
+        <Help3CatalogName>VS</Help3CatalogName>
+        <Help3CatalogVersion>100</Help3CatalogVersion>
+        <Help3CatalogLocaleText>en-US</Help3CatalogLocaleText>
+        <Help3TemplateName></Help3TemplateName>
+        <Help3ProductName></Help3ProductName>
+        <Help3BookName></Help3BookName>
+        <IsHelp3CreateRegistrationScriptEnabled>true</IsHelp3CreateRegistrationScriptEnabled>
+        <IsHelp3RegisterLocallyEnabled>true</IsHelp3RegisterLocallyEnabled>
+        <IsHelp3SigningEnabled>false</IsHelp3SigningEnabled>
+        <IsHelp3ValidationEnabled>false</IsHelp3ValidationEnabled>
+        <IsHelp3KeywordsEnabled>false</IsHelp3KeywordsEnabled>
+        <BrowserHelpTemplateName>2012 Style</BrowserHelpTemplateName>
+        <IsCustomHtmlHelpWindowSettings>false</IsCustomHtmlHelpWindowSettings>
+        <CustomHtmlHelpWindowSettings>
+          <IsExpandVisible>true</IsExpandVisible>
+          <IsBackVisible>true</IsBackVisible>
+          <IsForwardVisible>true</IsForwardVisible>
+          <IsStopVisible>false</IsStopVisible>
+          <IsRefreshVisible>false</IsRefreshVisible>
+          <IsHomeVisible>false</IsHomeVisible>
+          <IsLocateVisible>true</IsLocateVisible>
+          <IsOptionsVisible>true</IsOptionsVisible>
+          <IsPrintVisible>true</IsPrintVisible>
+          <IsZoomVisible>false</IsZoomVisible>
+          <NavigationPaneWidth>200</NavigationPaneWidth>
+          <IsNavigationPaneInitiallyClosed>false</IsNavigationPaneInitiallyClosed>
+          <IsAutoSyncWithTocEnabled>true</IsAutoSyncWithTocEnabled>
+          <IsSearchTabVisible>true</IsSearchTabVisible>
+          <IsHistoryTabVisible>false</IsHistoryTabVisible>
+          <IsFavoritesTabVisible>true</IsFavoritesTabVisible>
+          <DefaultTab>Contents</DefaultTab>
+          <IsSaveUserWindowSettingsEnabled>true</IsSaveUserWindowSettingsEnabled>
+          <WindowSizeHeight>400</WindowSizeHeight>
+          <WindowSizeWidth>600</WindowSizeWidth>
+          <WindowLocationLeft>0</WindowLocationLeft>
+          <WindowLocationTop>0</WindowLocationTop>
+        </CustomHtmlHelpWindowSettings>
+        <HelpFileName></HelpFileName>
+      </HelpCompiler>
+      <RuleEngine>
+        <Rules Caption="" IsReadOnly="false" MatchType="All" Id="root">
+          <Rules>
+            <RuleGroup Caption="" IsReadOnly="false" MatchType="All" Id="standard">
+              <Rules>
+                <Rule Caption="" IsReadOnly="false" MatchType="All" Id="outputtype">
+                  <Conditions>
+                    <RuleCondition Caption="" IsReadOnly="false" BuildFlagMatchType="None" Id="c3568cdf-8a40-4cf3-bb9a-de21f7a3e179" Designer="BUILDFLAGS">
+                      <BuildFlags>{46CEF21D-3301-4517-A875-A0906828390E}</BuildFlags>
+                    </RuleCondition>
+                  </Conditions>
+                </Rule>
+              </Rules>
+            </RuleGroup>
+          </Rules>
+        </Rules>
+      </RuleEngine>
+      <ShortFileNames GenerateShortFileNames="false" />
+      <TopicsProjectProfilePlugin>
+        <TemplateName>2012 Style</TemplateName>
+        <IncludeBreadcrumbs>true</IncludeBreadcrumbs>
+        <AutoGenerateTopicIndexEntries>true</AutoGenerateTopicIndexEntries>
+        <AutoGenerateCategoryIndexEntries>true</AutoGenerateCategoryIndexEntries>
+        <IncludeOnlyCompletedTopics>false</IncludeOnlyCompletedTopics>
+        <IsNewSource>CreationDateTime</IsNewSource>
+        <IsNewCustomTopicPropertyId></IsNewCustomTopicPropertyId>
+        <IsAnchorParsingEnabled>false</IsAnchorParsingEnabled>
+      </TopicsProjectProfilePlugin>
+      <BookletsProjectProfilePlugin>
+        <TemplateName></TemplateName>
+      </BookletsProjectProfilePlugin>
+      <WidgetsProjectProfilePlugin>
+        <IsIncludeInThisTopicWidgetEnabled>false</IsIncludeInThisTopicWidgetEnabled>
+        <InThisTopicWidgetHeadingsMinimum>5</InThisTopicWidgetHeadingsMinimum>
+        <InThisTopicWidgetTagName>H1</InThisTopicWidgetTagName>
+        <InThisTopicWidgetPrefix>$$In_This_Topic$$</InThisTopicWidgetPrefix>
+        <WidgetTypes Version="2011.1" />
+      </WidgetsProjectProfilePlugin>
+      <OtherFiles>
+        <IsLogoEnabled>false</IsLogoEnabled>
+        <LogoOtherFileName></LogoOtherFileName>
+        <IsGoogleAnalyticsEnabled>false</IsGoogleAnalyticsEnabled>
+        <GoogleAnalyticsId></GoogleAnalyticsId>
+        <IsOtherHeadContentEnabled>false</IsOtherHeadContentEnabled>
+        <OtherHeadContent></OtherHeadContent>
+      </OtherFiles>
+      <OutputDirectory>build\build2</OutputDirectory>
+    </ProjectProfile>
+  </ProjectProfiles>
+  <HelpContextIDHeaderFile></HelpContextIDHeaderFile>
+  <PrimaryLocale CultureId="-">
+    <ExportDateTime></ExportDateTime>
+    <Dictionary></Dictionary>
+    <Notes></Notes>
+    <PhraseCultureId></PhraseCultureId>
+    <EncodingCulture></EncodingCulture>
+    <IsEnhancedWordBreakAnalysisEnabled>false</IsEnhancedWordBreakAnalysisEnabled>
+  </PrimaryLocale>
+  <IsNewProject>false</IsNewProject>
+  <ContentFiles />
+  <ContentFromProjectPlugin />
+  <DotNetAssemblies />
+  <Filters>
+    <ExcludedItemTypes />
+    <ExcludedItems />
+  </Filters>
+</DocumentXProject>

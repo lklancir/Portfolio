@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="appotekaDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="dobavljaci">
+    <Key>
+      <PropertyRef Name="IdDobavljac" />
+    </Key>
+    <Property Name="IdDobavljac" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="naziv" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="OIB" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="IBAN" Type="char" MaxLength="21" />
+    <Property Name="adresa" Type="text" />
+  </EntityType>
+  <EntityType Name="kategorije_has_ladice">
+    <Key>
+      <PropertyRef Name="IdKategorije" />
+      <PropertyRef Name="IdLadice" />
+    </Key>
+    <Property Name="IdKategorije" Type="int" Nullable="false" />
+    <Property Name="IdLadice" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kategorijeLijekova">
+    <Key>
+      <PropertyRef Name="IdKategorije" />
+    </Key>
+    <Property Name="IdKategorije" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="naziv" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="opis" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ladice">
+    <Key>
+      <PropertyRef Name="IdLadice" />
+    </Key>
+    <Property Name="IdLadice" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kapacitet" Type="int" />
+  </EntityType>
+  <EntityType Name="lijekovi">
+    <Key>
+      <PropertyRef Name="serijskiBroj" />
+    </Key>
+    <Property Name="serijskiBroj" Type="int" Nullable="false" />
+    <Property Name="naziv" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="proizvodac" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="rokTrajanja" Type="date" Nullable="false" />
+    <Property Name="cijenaKupovna" Type="float" Nullable="false" />
+    <Property Name="cijenaProdajna" Type="float" Nullable="false" />
+    <Property Name="kolicina" Type="int" Nullable="false" />
+    <Property Name="dopunsko" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="lijekovi_has_kategorije">
+    <Key>
+      <PropertyRef Name="serijskiBroj" />
+      <PropertyRef Name="IdKategorije" />
+    </Key>
+    <Property Name="serijskiBroj" Type="int" Nullable="false" />
+    <Property Name="IdKategorije" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="lijekovi_has_narudzbe">
+    <Key>
+      <PropertyRef Name="IdNarudzbe" />
+      <PropertyRef Name="serijskiBroj" />
+    </Key>
+    <Property Name="IdNarudzbe" Type="int" Nullable="false" />
+    <Property Name="serijskiBroj" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="lijekovi_has_racun">
+    <Key>
+      <PropertyRef Name="serijskiBroj" />
+      <PropertyRef Name="IdrRacuna" />
+    </Key>
+    <Property Name="serijskiBroj" Type="int" Nullable="false" />
+    <Property Name="IdrRacuna" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="narudzbe">
+    <Key>
+      <PropertyRef Name="IdNarudzbe" />
+    </Key>
+    <Property Name="IdNarudzbe" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="datum" Type="date" Nullable="false" />
+    <Property Name="iznos" Type="float" Nullable="false" />
+    <Property Name="IdDobavljac" Type="int" />
+    <Property Name="OIB" Type="char" MaxLength="11" />
+  </EntityType>
+  <EntityType Name="racun">
+    <Key>
+      <PropertyRef Name="IdrRacuna" />
+    </Key>
+    <Property Name="IdrRacuna" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="datum" Type="date" Nullable="false" />
+    <Property Name="iznos" Type="float" Nullable="false" />
+    <Property Name="OIB" Type="char" MaxLength="11" />
+  </EntityType>
+  <EntityType Name="zaposlenici">
+    <Key>
+      <PropertyRef Name="OIB" />
+    </Key>
+    <Property Name="OIB" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="prezime" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="ime" Type="nvarchar" MaxLength="45" Nullable="false" />
+    <Property Name="korIme" Type="nvarchar" MaxLength="45" />
+    <Property Name="lozinka" Type="nvarchar" MaxLength="45" />
+    <Property Name="adresa" Type="text" />
+  </EntityType>
+  <Association Name="Relationship1">
+    <End Role="lijekovi" Type="Self.lijekovi" Multiplicity="1" />
+    <End Role="lijekovi_has_racun" Type="Self.lijekovi_has_racun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lijekovi">
+        <PropertyRef Name="serijskiBroj" />
+      </Principal>
+      <Dependent Role="lijekovi_has_racun">
+        <PropertyRef Name="serijskiBroj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship12">
+    <End Role="dobavljaci" Type="Self.dobavljaci" Multiplicity="0..1" />
+    <End Role="narudzbe" Type="Self.narudzbe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dobavljaci">
+        <PropertyRef Name="IdDobavljac" />
+      </Principal>
+      <Dependent Role="narudzbe">
+        <PropertyRef Name="IdDobavljac" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship13">
+    <End Role="zaposlenici" Type="Self.zaposlenici" Multiplicity="0..1" />
+    <End Role="narudzbe" Type="Self.narudzbe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="zaposlenici">
+        <PropertyRef Name="OIB" />
+      </Principal>
+      <Dependent Role="narudzbe">
+        <PropertyRef Name="OIB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship14">
+    <End Role="kategorijeLijekova" Type="Self.kategorijeLijekova" Multiplicity="1" />
+    <End Role="kategorije_has_ladice" Type="Self.kategorije_has_ladice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kategorijeLijekova">
+        <PropertyRef Name="IdKategorije" />
+      </Principal>
+      <Dependent Role="kategorije_has_ladice">
+        <PropertyRef Name="IdKategorije" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship15">
+    <End Role="ladice" Type="Self.ladice" Multiplicity="1" />
+    <End Role="kategorije_has_ladice" Type="Self.kategorije_has_ladice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ladice">
+        <PropertyRef Name="IdLadice" />
+      </Principal>
+      <Dependent Role="kategorije_has_ladice">
+        <PropertyRef Name="IdLadice" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship16">
+    <End Role="zaposlenici" Type="Self.zaposlenici" Multiplicity="0..1" />
+    <End Role="racun" Type="Self.racun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="zaposlenici">
+        <PropertyRef Name="OIB" />
+      </Principal>
+      <Dependent Role="racun">
+        <PropertyRef Name="OIB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship2">
+    <End Role="racun" Type="Self.racun" Multiplicity="1" />
+    <End Role="lijekovi_has_racun" Type="Self.lijekovi_has_racun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="racun">
+        <PropertyRef Name="IdrRacuna" />
+      </Principal>
+      <Dependent Role="lijekovi_has_racun">
+        <PropertyRef Name="IdrRacuna" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship3">
+    <End Role="lijekovi" Type="Self.lijekovi" Multiplicity="1" />
+    <End Role="lijekovi_has_kategorije" Type="Self.lijekovi_has_kategorije" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lijekovi">
+        <PropertyRef Name="serijskiBroj" />
+      </Principal>
+      <Dependent Role="lijekovi_has_kategorije">
+        <PropertyRef Name="serijskiBroj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship4">
+    <End Role="kategorijeLijekova" Type="Self.kategorijeLijekova" Multiplicity="1" />
+    <End Role="lijekovi_has_kategorije" Type="Self.lijekovi_has_kategorije" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kategorijeLijekova">
+        <PropertyRef Name="IdKategorije" />
+      </Principal>
+      <Dependent Role="lijekovi_has_kategorije">
+        <PropertyRef Name="IdKategorije" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship5">
+    <End Role="narudzbe" Type="Self.narudzbe" Multiplicity="1" />
+    <End Role="lijekovi_has_narudzbe" Type="Self.lijekovi_has_narudzbe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="narudzbe">
+        <PropertyRef Name="IdNarudzbe" />
+      </Principal>
+      <Dependent Role="lijekovi_has_narudzbe">
+        <PropertyRef Name="IdNarudzbe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Relationship6">
+    <End Role="lijekovi" Type="Self.lijekovi" Multiplicity="1" />
+    <End Role="lijekovi_has_narudzbe" Type="Self.lijekovi_has_narudzbe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lijekovi">
+        <PropertyRef Name="serijskiBroj" />
+      </Principal>
+      <Dependent Role="lijekovi_has_narudzbe">
+        <PropertyRef Name="serijskiBroj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="appotekaDBModelStoreContainer">
+    <EntitySet Name="dobavljaci" EntityType="Self.dobavljaci" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kategorije_has_ladice" EntityType="Self.kategorije_has_ladice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kategorijeLijekova" EntityType="Self.kategorijeLijekova" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ladice" EntityType="Self.ladice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lijekovi" EntityType="Self.lijekovi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lijekovi_has_kategorije" EntityType="Self.lijekovi_has_kategorije" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lijekovi_has_narudzbe" EntityType="Self.lijekovi_has_narudzbe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lijekovi_has_racun" EntityType="Self.lijekovi_has_racun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="narudzbe" EntityType="Self.narudzbe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="racun" EntityType="Self.racun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="zaposlenici" EntityType="Self.zaposlenici" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="Relationship1" Association="Self.Relationship1">
+      <End Role="lijekovi" EntitySet="lijekovi" />
+      <End Role="lijekovi_has_racun" EntitySet="lijekovi_has_racun" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship12" Association="Self.Relationship12">
+      <End Role="dobavljaci" EntitySet="dobavljaci" />
+      <End Role="narudzbe" EntitySet="narudzbe" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship13" Association="Self.Relationship13">
+      <End Role="zaposlenici" EntitySet="zaposlenici" />
+      <End Role="narudzbe" EntitySet="narudzbe" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship14" Association="Self.Relationship14">
+      <End Role="kategorijeLijekova" EntitySet="kategorijeLijekova" />
+      <End Role="kategorije_has_ladice" EntitySet="kategorije_has_ladice" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship15" Association="Self.Relationship15">
+      <End Role="ladice" EntitySet="ladice" />
+      <End Role="kategorije_has_ladice" EntitySet="kategorije_has_ladice" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship16" Association="Self.Relationship16">
+      <End Role="zaposlenici" EntitySet="zaposlenici" />
+      <End Role="racun" EntitySet="racun" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship2" Association="Self.Relationship2">
+      <End Role="racun" EntitySet="racun" />
+      <End Role="lijekovi_has_racun" EntitySet="lijekovi_has_racun" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship3" Association="Self.Relationship3">
+      <End Role="lijekovi" EntitySet="lijekovi" />
+      <End Role="lijekovi_has_kategorije" EntitySet="lijekovi_has_kategorije" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship4" Association="Self.Relationship4">
+      <End Role="kategorijeLijekova" EntitySet="kategorijeLijekova" />
+      <End Role="lijekovi_has_kategorije" EntitySet="lijekovi_has_kategorije" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship5" Association="Self.Relationship5">
+      <End Role="narudzbe" EntitySet="narudzbe" />
+      <End Role="lijekovi_has_narudzbe" EntitySet="lijekovi_has_narudzbe" />
+    </AssociationSet>
+    <AssociationSet Name="Relationship6" Association="Self.Relationship6">
+      <End Role="lijekovi" EntitySet="lijekovi" />
+      <End Role="lijekovi_has_narudzbe" EntitySet="lijekovi_has_narudzbe" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

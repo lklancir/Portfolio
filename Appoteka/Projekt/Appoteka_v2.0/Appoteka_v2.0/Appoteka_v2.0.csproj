@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{502971DF-5F51-4CC7-A746-D2015BDE97F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Appoteka_v2._0</RootNamespace>
+    <AssemblyName>Appoteka_v2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\ADMIN\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>Appoteka</ProductName>
+    <PublisherName>OzbiljniLjudi Corp.</PublisherName>
+    <SuiteName>Appoteka</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>12DC7E8F856D0218E1F349EFF279E12B906BA0F7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Appoteka_v2.0_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Raverus.FiskalizacijaDEV">
+      <HintPath>..\..\..\..\FiskalizacijaDEV v2.0\FiskalizacijaDEV v2.0\NET45\x64\Raverus.FiskalizacijaDEV.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="appotekaDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appotekaDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="appotekaDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appotekaDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="appotekaDBDataSet2.cs">
+      <DependentUpon>appotekaDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="appotekaDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appotekaDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DodajLijek.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DodajLijek.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dobavljaci.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormAppoteka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAppoteka.Designer.cs">
+      <DependentUpon>FormAppoteka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDobavljaci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDobavljaci.Designer.cs">
+      <DependentUpon>FormDobavljaci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDobavljaciNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDobavljaciNovi.Designer.cs">
+      <DependentUpon>FormDobavljaciNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDodavanjeKategorija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDodavanjeKategorija.Designer.cs">
+      <DependentUpon>FormDodavanjeKategorija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDodavanjeLijekova.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDodavanjeLijekova.Designer.cs">
+      <DependentUpon>FormDodavanjeLijekova.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHzzoProvjeri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHzzoProvjeri.Designer.cs">
+      <DependentUpon>FormHzzoProvjeri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHzzoProvjeriBroj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHzzoProvjeriBroj.Designer.cs">
+      <DependentUpon>FormHzzoProvjeriBroj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKategorijaLadica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKategorijaLadica.Designer.cs">
+      <DependentUpon>FormKategorijaLadica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKategorije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKategorije.Designer.cs">
+      <DependentUpon>FormKategorije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKategorijeNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKategorijeNovi.Designer.cs">
+      <DependentUpon>FormKategorijeNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLadice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLadice.Designer.cs">
+      <DependentUpon>FormLadice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLadiceNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLadiceNovi.Designer.cs">
+      <DependentUpon>FormLadiceNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLijekovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLijekovi.Designer.cs">
+      <DependentUpon>FormLijekovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLijekoviNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLijekoviNovi.Designer.cs">
+      <DependentUpon>FormLijekoviNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNarudzbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNarudzbe.Designer.cs">
+      <DependentUpon>FormNarudzbe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNarudzbeNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNarudzbeNovi.Designer.cs">
+      <DependentUpon>FormNarudzbeNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrijava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrijava.Designer.cs">
+      <DependentUpon>FormPrijava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRacuni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRacuni.Designer.cs">
+      <DependentUpon>FormRacuni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRacuniNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRacuniNovi.Designer.cs">
+      <DependentUpon>FormRacuniNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRacunPrikazi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRacunPrikazi.Designer.cs">
+      <DependentUpon>FormRacunPrikazi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZaposlenici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZaposlenici.Designer.cs">
+      <DependentUpon>FormZaposlenici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZaposleniciNovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZaposleniciNovi.Designer.cs">
+      <DependentUpon>FormZaposleniciNovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HzzoDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HzzoDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hzzoKlijent.cs">
+      <DependentUpon>ModelHZZO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hzzoLijekovi.cs">
+      <DependentUpon>ModelHZZO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="hzzoRecept.cs">
+      <DependentUpon>ModelHZZO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="kategorijeLijekova.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="kriticneZalihe.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kriticneZalihe.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ladice.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ladice1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ladice1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ladice2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ladice2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ladiceBS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ladiceBS1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ladiceBS2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ladiceBS2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="lijekovi.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelAppoteka.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelAppoteka.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelAppoteka.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelAppoteka.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelAppoteka.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHZZO.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHZZO.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHZZO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHZZO.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelHZZO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelHZZO.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="narudzbe.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="racun.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDobavljaci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportDobavljaci.Designer.cs">
+      <DependentUpon>ReportDobavljaci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportKategorije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportKategorije.Designer.cs">
+      <DependentUpon>ReportKategorije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportLijekovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportLijekovi.Designer.cs">
+      <DependentUpon>ReportLijekovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zaposlenici.cs">
+      <DependentUpon>ModelAppoteka.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAppoteka.resx">
+      <DependentUpon>FormAppoteka.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDobavljaci.resx">
+      <DependentUpon>FormDobavljaci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDobavljaciNovi.resx">
+      <DependentUpon>FormDobavljaciNovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDodavanjeKategorija.resx">
+      <DependentUpon>FormDodavanjeKategorija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDodavanjeLijekova.resx">
+      <DependentUpon>FormDodavanjeLijekova.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHzzoProvjeri.resx">
+      <DependentUpon>FormHzzoProvjeri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHzzoProvjeriBroj.resx">
+      <DependentUpon>FormHzzoProvjeriBroj.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKategorijaLadica.resx">
+      <DependentUpon>FormKategorijaLadica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKategorije.resx">
+      <DependentUpon>FormKategorije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKategorijeNovi.resx">
+      <DependentUpon>FormKategorijeNovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLadice.resx">
+      <DependentUpon>FormLadice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLadiceNovi.resx">
+      <DependentUpon>FormLadiceNovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLijekovi.resx">
+      <DependentUpon>FormLijekovi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLijekoviNovi.resx">
+      <DependentUpon>FormLijekoviNovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNarudzbe.resx">
+      <DependentUpon>FormNarudzbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNarudzbeNovi.resx">
+      <DependentUpon>FormNarudzbeNovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrijava.resx">
+      <DependentUpon>FormPrijava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRacuni.resx">
+      <DependentUpon>FormRacuni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRacuniNovi.resx">
+      <DependentUpon>FormRacuniNovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRacunPrikazi.resx">
+      <DependentUpon>FormRacunPrikazi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZaposlenici.resx">
+      <DependentUpon>FormZaposlenici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZaposleniciNovi.resx">
+      <DependentUpon>FormZaposleniciNovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportKategorije.rdlc" />
+    <EmbeddedResource Include="ReportDobavljaci.rdlc" />
+    <EmbeddedResource Include="ReportDobavljaci.resx">
+      <DependentUpon>ReportDobavljaci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportKategorije.resx">
+      <DependentUpon>ReportKategorije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportLijekovi.resx">
+      <DependentUpon>ReportLijekovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportLijekovi.rdlc" />
+    <EntityDeploy Include="ModelAppoteka.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelAppoteka.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="appotekaDBDataSet.xsc">
+      <DependentUpon>appotekaDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="appotekaDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>appotekaDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="appotekaDBDataSet.xss">
+      <DependentUpon>appotekaDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="appotekaDBDataSet1.xsc">
+      <DependentUpon>appotekaDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="appotekaDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>appotekaDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="appotekaDBDataSet1.xss">
+      <DependentUpon>appotekaDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="appotekaDBDataSet2.xsc">
+      <DependentUpon>appotekaDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="appotekaDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>appotekaDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="appotekaDBDataSet2.xss">
+      <DependentUpon>appotekaDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Appoteka_v2.0_TemporaryKey.pfx" />
+    <None Include="DodajLijek.xsc">
+      <DependentUpon>DodajLijek.xsd</DependentUpon>
+    </None>
+    <None Include="DodajLijek.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DodajLijek.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DodajLijek.xss">
+      <DependentUpon>DodajLijek.xsd</DependentUpon>
+    </None>
+    <None Include="HzzoDBDataSet.xsc">
+      <DependentUpon>HzzoDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HzzoDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HzzoDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HzzoDBDataSet.xss">
+      <DependentUpon>HzzoDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="kriticneZalihe.xsc">
+      <DependentUpon>kriticneZalihe.xsd</DependentUpon>
+    </None>
+    <None Include="kriticneZalihe.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kriticneZalihe.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kriticneZalihe.xss">
+      <DependentUpon>kriticneZalihe.xsd</DependentUpon>
+    </None>
+    <None Include="ladice1.xsc">
+      <DependentUpon>ladice1.xsd</DependentUpon>
+    </None>
+    <None Include="ladice1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ladice1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ladice1.xss">
+      <DependentUpon>ladice1.xsd</DependentUpon>
+    </None>
+    <None Include="ladice2.xsc">
+      <DependentUpon>ladice2.xsd</DependentUpon>
+    </None>
+    <None Include="ladice2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ladice2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ladice2.xss">
+      <DependentUpon>ladice2.xsd</DependentUpon>
+    </None>
+    <None Include="ladiceBS1.xsc">
+      <DependentUpon>ladiceBS1.xsd</DependentUpon>
+    </None>
+    <None Include="ladiceBS1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ladiceBS1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ladiceBS1.xss">
+      <DependentUpon>ladiceBS1.xsd</DependentUpon>
+    </None>
+    <None Include="ladiceBS2.xsc">
+      <DependentUpon>ladiceBS2.xsd</DependentUpon>
+    </None>
+    <None Include="ladiceBS2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ladiceBS2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ladiceBS2.xss">
+      <DependentUpon>ladiceBS2.xsd</DependentUpon>
+    </None>
+    <None Include="ModelAppoteka.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelAppoteka.edmx</DependentUpon>
+      <LastGenOutput>ModelAppoteka.Context.cs</LastGenOutput>
+    </None>
+    <None Include="ModelAppoteka.edmx.diagram">
+      <DependentUpon>ModelAppoteka.edmx</DependentUpon>
+    </None>
+    <None Include="ModelAppoteka.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelAppoteka.edmx</DependentUpon>
+      <LastGenOutput>ModelAppoteka.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="ModelHZZO.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelHZZO.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelHZZO.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelHZZO.edmx</DependentUpon>
+      <LastGenOutput>ModelHZZO.Context.cs</LastGenOutput>
+    </None>
+    <None Include="ModelHZZO.edmx.diagram">
+      <DependentUpon>ModelHZZO.edmx</DependentUpon>
+    </None>
+    <None Include="ModelHZZO.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelHZZO.edmx</DependentUpon>
+      <LastGenOutput>ModelHZZO.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
